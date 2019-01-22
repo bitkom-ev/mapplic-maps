@@ -8,10 +8,12 @@ dependencies:
     - field.field.node.mapplic_landmark.field_mapplic_pos_x
     - field.field.node.mapplic_landmark.field_mapplic_pos_y
     - field.field.node.mapplic_landmark.field_mapplic_svg_id
+    - field.field.node.mapplic_landmark.field_maps_json
     - field.field.node.mapplic_landmark.field_thumb_image
     - image.style.thumbnail
     - node.type.mapplic_landmark
   module:
+    - file
     - path
     - svg_image
     - text
@@ -31,7 +33,7 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -65,9 +67,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_maps_json:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
   field_thumb_image:
     type: image_image
-    weight: 2
+    weight: 7
     region: content
     settings:
       preview_image_style: thumbnail
@@ -75,7 +84,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -83,7 +92,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 11
     region: content
     third_party_settings: {  }
   title:
@@ -96,7 +105,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 8
     settings:
       match_operator: CONTAINS
       size: 60

@@ -8,9 +8,11 @@ dependencies:
     - field.field.node.mapplic_landmark.field_mapplic_pos_x
     - field.field.node.mapplic_landmark.field_mapplic_pos_y
     - field.field.node.mapplic_landmark.field_mapplic_svg_id
+    - field.field.node.mapplic_landmark.field_maps_json
     - field.field.node.mapplic_landmark.field_thumb_image
     - node.type.mapplic_landmark
   module:
+    - file
     - svg_image
     - text
     - user
@@ -28,7 +30,7 @@ content:
     third_party_settings: {  }
   field_background_colour:
     type: string
-    weight: 3
+    weight: 2
     region: content
     label: inline
     settings:
@@ -36,7 +38,7 @@ content:
     third_party_settings: {  }
   field_mapplic_pos_x:
     type: number_decimal
-    weight: 4
+    weight: 3
     region: content
     label: above
     settings:
@@ -47,7 +49,7 @@ content:
     third_party_settings: {  }
   field_mapplic_pos_y:
     type: number_decimal
-    weight: 5
+    weight: 4
     region: content
     label: above
     settings:
@@ -58,12 +60,20 @@ content:
     third_party_settings: {  }
   field_mapplic_svg_id:
     type: string
-    weight: 6
+    weight: 5
     region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_maps_json:
+    weight: 6
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
   field_thumb_image:
     type: image
     weight: 1
@@ -77,10 +87,6 @@ content:
         width: ''
         height: ''
     third_party_settings: {  }
-  links:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   langcode: true
+  links: true

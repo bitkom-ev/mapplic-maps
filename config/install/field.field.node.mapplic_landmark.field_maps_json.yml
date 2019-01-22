@@ -1,0 +1,27 @@
+uuid: 3bd4612b-95d0-4cec-adae-9a38057160fb
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_maps_json
+    - node.type.mapplic_landmark
+  module:
+    - file
+id: node.mapplic_landmark.field_maps_json
+field_name: field_maps_json
+entity_type: node
+bundle: mapplic_landmark
+label: maps_json
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: mapplic
+  file_extensions: json
+  max_filesize: 2mb
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

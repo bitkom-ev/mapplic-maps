@@ -5,6 +5,13 @@ dependencies:
   enforced:
     module:
       - mapplic
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 name: 'Mapplic Landmark'
 type: mapplic_landmark
 description: 'Content type that can be used to provide additional information for <em>Mapplic Landmark</em>'

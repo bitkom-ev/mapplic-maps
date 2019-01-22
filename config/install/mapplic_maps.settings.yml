@@ -20,7 +20,7 @@ langcode: de
 mapplic_maps:
   - '934'
 actions: null
-form_build_id: form-pjoj-ZuyylrITD1m7KQUgZdyMhVYFYHtN1zOUJYp3O8
+form_build_id: form-u5aRlOjWml_C7a7HSTmTeGLX_ULAAOQ6uQrdDSSsFkY
 form_token: R-LXRK4mhm-9J5dvhhGtmTrvF0-UAr7NweXf4ttCY-Y
 form_id: mapplic_maps_admin_settings
-mapplic_map_source: /sites/smartschool/files/germany.svg
+mapplic_map_source: /modules/contrib/mapplic_maps/libraries/mapplic_maps/html/deutschland.json

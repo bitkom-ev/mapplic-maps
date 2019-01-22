@@ -1,0 +1,11 @@
+uuid: a513bbf3-d36e-4817-aaa1-6d05c4d7f7ce
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.mapplic_landmark
+id: node.mapplic_landmark
+target_entity_type_id: node
+target_bundle: mapplic_landmark
+default_langcode: site_default
+language_alterable: false
