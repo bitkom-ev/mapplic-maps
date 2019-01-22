@@ -1,0 +1,9 @@
+uuid: edde9249-0019-411e-8ce1-0e331c43ce2d
+langcode: de
+status: true
+dependencies: {  }
+id: node_type_mapplic_landmark
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

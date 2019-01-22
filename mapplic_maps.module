@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * Mapplic module file.
+ */
+
+/**
+ * Implements hook_permission().
+ */
+function mapplicMaps_permission() {
+  return array(
+    'administer mapplic maps' => array(
+      'title' => t('Administer Mapplic Maps'),
+      'description' => t('Perform administration tasks for Mapplic Maps.'),
+    ),
+  );
+}

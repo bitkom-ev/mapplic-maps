@@ -1,0 +1,372 @@
+{
+    "mapwidth": 600,
+    "mapheight": 800,
+    "zoom": 10,
+    "categories": [
+    ],
+    "levels": [
+        {
+            "id": "deutschland",
+            "title": "Deutschland",
+            "map": "/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/deutschland.svg",
+            "minimap": "/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/deutschland-mini.jpg",
+            "locations": [
+                {
+                    "id": "freiburg",
+                    "title": "Friedrich-Gymnasium Freiburg",
+                    "description": "<p>Friedrich-Gymnasium Freiburg (<a href=\"http://www.fg-freiburg.de\">http://www.fg-freiburg.de</a>)<br>Schulform: Humanistisches Gymnasium</p>",
+                    "label": "Friedrich-Gymnasium Freiburg",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.2600",
+                    "y": "0.9100"
+                },
+
+                {
+                    "id": "karlsruhe",
+                    "title": "Ernst-Reuter-Schule Karlsruhe",
+                    "description": "<p>Ernst-Reuter-Schule Karlsruhe (<a href=\"http://www.ers-karlsruhe.de\">http://www.ers-karlsruhe.de</a>)<br>Schulform: Werkrealschule</p>",
+                    "label": "Ernst-Reuter-Schule Karlsruhe",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.3200",
+                    "y": "0.8200"
+                },
+                {
+                    "id": "karlsruhe2",
+                    "title": "Drais-Gemeinschaftsschule Karlsruhe",
+                    "description": "<p>Drais-Gemeinschaftsschule Karlsruhe (<a href=\"http://www.drais-schule.de\">http://www.drais-schule.de</a>)<br>Schulform: Gemeinschaftsschule</p>",
+                    "label": "Drais-Gemeinschaftsschule Karlsruhe",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.3100",
+                    "y": "0.8100"
+                },
+                {
+                    "id": "karlsruhe3",
+                    "title": "Rennbuckel-Realschule Karlsruhe",
+                    "description": "<p>Rennbuckel-Realschule Karlsruhe (<a href=\"https://rennbuckel.de\">https://rennbuckel.de</a>)<br>Schulform: Realschule</p>",
+                    "label": "Rennbuckel-Realschule Karlsruhe",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.3300",
+                    "y": "0.8300"
+                },
+                {
+                    "id": "tauberbischofsheim",
+                    "title": "Kaufmännische Schule Tauberbischofsheim",
+                    "description": "<p>Kaufmännische Schule Tauberbischofsheim (<a href=\"http://www.kstbb.de\">http://www.kstbb.de</a>)<br>Schulform: Berufsbildende Schule und Wirtschaftsgymnasium</p>",
+                    "label": "Kaufmännische Schule Tauberbischofsheim",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.5",
+                    "y": "0.4714"
+                },
+                {
+
+                    "id": "aschaffenburg",
+                    "title": "Staatliche Berufsschule 2 Aschaffenburg",
+                    "description": "<p>Staatliche Berufsschule 2 Aschaffenburg (<a href=\"http://www.kstbb.de\">http://www.kstbb.de</a>)<br>Schulform: Staatliche Berufsfachschule für IT-Berufe</p>",
+                    "label": "Staatliche Berufsschule 2 Aschaffenburg",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.4000",
+                    "y": "0.6500"
+                },
+
+                {
+                    "id": "neufahrn",
+                    "title": "Oskar-Maria-Graf-Gymnasium Neufahrn",
+                    "description": "<p>Oskar-Maria-Graf-Gymnasium Neufahrn (<a href=\"http://www.kstbb.de\">http://www.kstbb.de</a>)<br>Schulform: Naturwissenschaftlich-technologisches und sprachliches Gymnasium</p>",
+                    "label": "Oskar-Maria-Graf-Gymnasium Neufahrn",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.6200",
+                    "y": "0.8800"
+                },
+                {
+                    "id": "berlin",
+                    "title": "John-Lennon-Gymnasium Berlin",
+                    "description": "<p>John-Lennon-Gymnasium Berlin (<a href=\"http://www.jlgym-berlin.de\">http://www.jlgym-berlin.de</a>)<br>Schulform: Gymnasium</p>",
+                    "label": "John-Lennon-Gymnasium Berlin",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.7700",
+                    "y": "0.3200"
+                },
+                {
+                    "id": "ruesselsheim",
+                    "title": "Neues Gymnasium Rüsselsheim",
+                    "description": "<p>Neues Gymnasium Rüsselsheim (<a href=\"http://neues-gymnasium-ruesselsheim.de\">http://neues-gymnasium-ruesselsheim.de</a>)<br>Schulform: Gymnasium</p>",
+                    "label": "Neues Gymnasium Rüsselsheim",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.3250",
+                    "y": "0.6400"
+                },
+                {
+                    "id": "hameln",
+                    "title": "Handelslehranstalt Hameln",
+                    "description": "<p>Handelslehranstalt Hameln (<a href=\"https://www.hla-hameln.de\">https://www.hla-hameln.de</a>)<br>Schulform: Berufsbildende Schule</p>",
+                    "label": "Handelslehranstalt Hameln",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.4200",
+                    "y": "0.4000"
+                },
+                {
+                    "id": "hatten",
+                    "title": "Waldschule Hatten",
+                    "description": "<p>Waldschule Hatten (<a href=\"http://www.wsh-hatten.de\">http://www.wsh-hatten.de</a>)<br>Schulform: Oberschule</p>",
+                    "label": "Waldschule Hatten",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.2800",
+                    "y": "0.2500"
+                },
+                {
+                    "id": "koeln",
+                    "title": "Erich-Gutenberg-Berufskolleg Köln",
+                    "description": "<p>Erich-Gutenberg-Berufskolleg Köln (<a href=\"http://www.egb-koeln.de\">http://www.egb-koeln.de</a>)<br>Schulform: Sekundarstufe II mit gymnasialer Oberstufe</p>",
+                    "label": "Erich-Gutenberg-Berufskolleg Köln",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.2000",
+                    "y": "0.5300"
+                },
+                {
+                    "id": "unna",
+                    "title": "Werner-von-Siemens-Gesamtschule Königsborn Unna",
+                    "description": "<p>Werner-von-Siemens-Gesamtschule Königsborn Unna (<a href=\"http://www.gek-unna.de\">http://www.gek-unna.de</a>)<br>Schulform: Gesamtschule</p>",
+                    "label": "Werner-von-Siemens-Gesamtschule Königsborn Unna",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.2400",
+                    "y": "0.4500"
+                },
+                {
+                    "id": "wuerselen",
+                    "title": "Gymnasium Würselen",
+                    "description": "<p>Gymnasium Würselen (<a href=\"http://www.gymnasium-wuerselen.de\">http://www.gymnasium-wuerselen.de</a>)<br>Schulform: Gymnasium</p>",
+                    "label": "Gymnasium Würselen",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.1000",
+                    "y": "0.5600"
+                },
+                {
+                    "id": "koblenz",
+                    "title": "Carl-Benz-Schule Koblenz",
+                    "description": "<p>Carl-Benz-Schule Koblenz (<a href=\"http://www.bbs-technik-koblenz.de\">http://www.bbs-technik-koblenz.de</a>)<br>Schulform: Berufsbildende Schule und berufliches Gymnasium</p>",
+                    "label": "Carl-Benz-Schule Koblenz",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.2000",
+                    "y": "0.6500"
+                },
+                {
+                    "id": "trier",
+                    "title": "Balthasar-Neumann-Technikum Trier",
+                    "description": "<p>Balthasar-Neumann-Technikum Trier (<a href=\"http://www.bnt-trier.de\">http://www.bnt-trier.de</a>)<br>Schulform: Fachschule für Technik und technisches Gymnasium</p>",
+                    "label": "Balthasar-Neumann-Technikum Trier",
+                    "pin": "pin-smartschool",
+                    "x": "0.1220",
+                    "y": "0.6645"
+                },
+                {
+                    "id": "doebeln",
+                    "title": "G.-E.-Lessing-Gymnasium Döbeln",
+                    "description": "<p>G.-E.-Lessing-Gymnasium Döbeln (<a href=\"http://www.lgd.de\">http://www.lgd.de</a>)<br>Schulform: Gymnasium</p>",
+                    "label": "G.-E.-Lessing-Gymnasium Döbeln",
+                    "pin": "pin-smartschool",
+                    "x": "0.7700",
+                    "y": "0.5000"
+                },
+                {
+                    "id": "frankfurt-am-main",
+                    "title": "Elisabethenschule Frankfurt am Main",
+                    "description": "<p>Elisabethenschule Frankfurt am Main (<a href=\"http://www.elisabethenschule.net\">http://www.elisabethenschule.net</a>)<br>Schulform: Gymnasium</p>",
+                    "label": "Elisabethenschule Frankfurt am Main",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.3100",
+                    "y": "0.6300"
+                },
+                {
+                    "id": "gruenstadt",
+                    "title": "Leininger-Gymnasium Grünstadt",
+                    "description": "<p>Leininger-Gymnasium Grünstadt (<a href=\"http://www.leiningergymnasium.de\">http://www.leiningergymnasium.de</a>)<br>Schulform: Gymnasium</p>",
+                    "label": "Leininger-Gymnasium Grünstadt",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.3000",
+                    "y": "0.7200"
+                },
+                {
+                    "id": "saarbruecken",
+                    "title": "Gemeinschaftsschule Bellevue Saarbrücken",
+                    "description": "<p>Gemeinschaftsschule Bellevue Saarbrücken (<a href=\"http://www.gts-bellevue.de\">http://www.gts-bellevue.de</a>)<br>Schulform: Gemeinschafts-/Gesamtschule</p>",
+                    "label": "Gemeinschaftsschule Bellevue Saarbrücken",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.1000",
+                    "y": "0.7300"
+                },
+                {
+                    "id": "wendel",
+                    "title": "Gymnasium Wendalinum Wendel",
+                    "description": "<p>Gymnasium Wendalinum Wendel (<a href=\"http://www.gymnasium-wendalinum.de\">http://www.gymnasium-wendalinum.de</a>)<br>Schulform: Gymnasium</p>",
+                    "label": "Gymnasium Wendalinum Wendel",
+                    "pin": "pin-smartschool",
+
+                    "x": "0.1230",
+                    "y": "0.7100"
+                },
+                {
+                    "id": "de-bw",
+                    "title": "Baden-Württemberg",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.3600",
+                    "y": "0.8200"
+                },
+                {
+                    "id": "de-be",
+                    "title": "Berlin",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.7690",
+                    "y": "0.3230"
+                },
+                {
+                    "id": "de-bb",
+                    "title": "Brandenburg",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.7800",
+                    "y": "0.3700"
+                },
+                {
+                    "id": "de-hb",
+                    "title": "Bremen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.3491",
+                    "y": "0.2530"
+                },
+                {
+                    "id": "de-hh",
+                    "title": "Hamburg",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.4541",
+                    "y": "0.1655"
+                },
+                {
+                    "id": "de-he",
+                    "title": "Hessen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.3700",
+                    "y": "0.5600"
+                },
+                {
+                    "id": "de-mv",
+                    "title": "Mecklenburg-Vorpommern",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.6700",
+                    "y": "0.16"
+                },
+                {
+                    "id": "de-ni",
+                    "title": "Niedersachsen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.4330",
+                    "y": "0.2800"
+                },
+                {
+                    "id": "de-nw",
+                    "title": "Nordrhein-Westfalen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.2300",
+                    "y": "0.4400"
+                },
+                {
+                    "id": "de-rp",
+                    "title": "Rheinland-Pfalz",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.2000",
+                    "y": "0.6400"
+                },
+                {
+                    "id": "de-sl",
+                    "title": "Saarland",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.1600",
+                    "y": "0.7200"
+                },
+                {
+                    "id": "de-sn",
+                    "title": "Sachsen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.7500",
+                    "y": "0.5100"
+                },
+                {
+                    "id": "de-st",
+                    "title": "Sachsen-Anhalt",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.6000",
+                    "y": "0.4000"
+                },
+                {
+                    "id": "de-sh",
+                    "title": "Schleswig-Holstein",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.4400",
+                    "y": "0.1200"
+                },
+                {
+                    "id": "de-th",
+                    "title": "Thüringen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.55",
+                    "y": "0.5300"
+                },
+                {
+                    "id": "de-by",
+                    "title": "Bayern",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#C2C2C2",
+                    "x": "0.6444",
+                    "y": "0.7786"
+                }
+            ]
+        }
+    ]
+}

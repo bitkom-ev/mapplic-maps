@@ -1,0 +1,60 @@
+{
+	"mapwidth":"598",
+	"mapheight":"598",
+	"bottomLat": "50.67500192979909",
+	"leftLng": "2.8680356443589807",
+	"topLat": "53.62609096857893",
+	"rightLng": "7.679884929662812",
+	"categories":[],
+	"levels":[
+		{
+			"id":"netherlands",
+			"title":"Netherlands",
+			"map":"maps/netherlands.svg",
+			"locations":[
+				{
+					"id": "nl-fr",
+					"title": "Friesland",
+					"about": "Netherland Province",
+					"description": "<p>Friesland province description.</p>",
+					"thumbnail": "images/thumb1.jpg",
+					"pin": "hidden",
+					"fill": "#4d5e6d",
+					"x": "0.6008",
+					"y": "0.1770"
+				},
+				{
+					"id": "nl-ut",
+					"title": "Utrecht",
+					"about": "Netherland Province",
+					"description": "Utrecht Province description",
+					"pin": "hidden",
+					"fill": "#4d5e6d",
+					"x": "0.4757",
+					"y": "0.5263"
+				},
+				{
+					"id": "amsterdam",
+					"title": "Amsterdam",
+					"about": "Capital city",
+					"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus dui velit, et efficitur lorem sollicitudin nec. Donec euismod ornare neque non maximus. Curabitur malesuada vestibulum nisi, eget posuere mi vulputate vel. Nullam eu eleifend ipsum. Morbi et feugiat dui, et vestibulum justo. Donec massa ex, consequat eu dolor vel, egestas blandit tortor. Duis eleifend sollicitudin lacus, et condimentum tortor interdum sed. Quisque rhoncus nisi ut risus lacinia, eu facilisis nibh congue. Cras vehicula scelerisque ullamcorper. Donec in eros accumsan ligula ornare feugiat.</p>",
+					"pin": "circular pin-md pin-label",
+					"label": "AM",
+					"link": "http://www.codecanyon.net/user/sekler",
+					"lat": "52.373412",
+					"lng": "4.896911"
+				},
+				{
+					"id": "thehague",
+					"title": "The Hague",
+					"about": "Seat of government",
+					"description": "<p>Seat of government in the Netherlands, and the capital city of the province of South Holland.</p>",
+					"pin": "circular pin-md pin-label",
+					"label": "HA",
+					"lat": "52.068598",
+					"lng": "4.294593"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,34 @@
+uuid: f8bd939c-8fa6-4fd5-9809-632a2604fd1e
+langcode: de
+status: true
+dependencies:
+  module:
+    - ctools
+    - mapplic_maps
+    - system
+  theme:
+    - smartschool
+id: mapplicmapsblock
+theme: smartschool
+region: content
+weight: 0
+provider: null
+plugin: mapplic_maps_block
+settings:
+  id: mapplic_maps_block
+  label: 'Mapplic Maps block'
+  provider: mapplic_maps
+  label_display: visible
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /deutschland
+    negate: false
+    context_mapping: {  }

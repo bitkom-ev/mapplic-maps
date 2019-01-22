@@ -1,0 +1,196 @@
+{
+	"mapwidth":"1200",
+	"mapheight":"760",
+	"categories":[
+
+	],
+	"levels":[
+		{
+			"id":"world",
+			"title":"World",
+			"map":"maps/world.svg",
+			"locations":[
+				{
+					"id": "ca",
+					"title": "Canada",
+					"description": "Canada.",
+					"pin": "hidden",
+					"fill": "#82c03e",
+					"link": "canada.html",
+					"x": "0.2271",
+					"y": "0.4290"
+				},
+				{
+					"id": "us",
+					"title": "USA",
+					"description": "United States of America.",
+					"pin": "hidden",
+					"fill": "#82c03e",
+					"link": "usa.html",
+					"x": "0.2338",
+					"y": "0.5232"
+				},
+				{
+					"id": "fr",
+					"title": "France",
+					"description": "France departments.",
+					"link": "france.html",
+					"fill": "#795ecd",
+					"pin": "hidden",
+					"x": "0.5079",
+					"y": "0.4758"
+				},
+				{
+					"id": "de",
+					"title": "Germany",
+					"description": "<p>Sed sed est sem. Donec et pretium justo, sodales finibus risus. Donec vulputate neque felis, ut porta turpis ultrices sit amet.</p><p>Nullam ut lectus massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc lobortis pretium velit eu maximus. Integer a faucibus libero.</p><p>Ut id eleifend sem, faucibus consectetur ligula. Proin vel vestibulum dui. Sed rhoncus eleifend velit, a sodales eros auctor ut.</p>",
+					"pin": "hidden",
+					"fill": "#795ecd",
+					"link": "germany.html",
+					"x": "0.5284",
+					"y": "0.4468"
+				},
+				{
+					"id": "hu",
+					"title": "Hungary",
+					"description": "Hungary",
+					"pin": "hidden",
+					"fill": "#795ecd",
+					"x": "0.5515",
+					"y": "0.4731"
+				},
+				{
+					"id": "gr",
+					"title": "Greece",
+					"description": "Greece",
+					"pin": "hidden",
+					"fill": "#795ecd",
+					"x": "0.5581",
+					"y": "0.5171"
+				},
+				{
+					"id": "gb",
+					"title": "United Kingdom",
+					"description": "England.",
+					"pin": "hidden",
+					"fill": "#795ecd",
+					"link": "uk.html",
+					"x": "0.4941",
+					"y": "0.4285"
+				},
+				{
+					"id": "za",
+					"title": "South Africa",
+					"description": "South Africa",
+					"pin": "hidden",
+					"fill": "#f19819",
+					"x": "0.5654",
+					"y": "0.8221"
+				},
+				{
+					"id": "mg",
+					"title": "Madagascar",
+					"description": "Madagascar",
+					"pin": "hidden",
+					"fill": "#f19819",
+					"x": "0.6238",
+					"y": "0.7749"
+				},
+				{
+					"id": "ma",
+					"title": "Morocco",
+					"description": "Morocco",
+					"pin": "hidden",
+					"fill": "#f19819",
+					"x": "0.4834",
+					"y": "0.5547"
+				},
+				{
+					"id": "eg",
+					"title": "Egypt",
+					"description": "Egypt",
+					"pin": "hidden",
+					"fill": "#f19819",
+					"x": "0.5779",
+					"y": "0.5759"
+				},
+				{
+					"id": "ly",
+					"title": "Libya",
+					"description": "Libya",
+					"pin": "hidden",
+					"fill": "#f19819",
+					"x": "0.5474",
+					"y": "0.5786"
+				},
+				{
+					"id": "na",
+					"title": "Namibia",
+					"description": "Namibia",
+					"pin": "hidden",
+					"fill": "#f19819",
+					"x": "0.5455",
+					"y": "0.7970"
+				},
+				{
+					"id": "cn",
+					"title": "China",
+					"description": "China",
+					"link": "china.html",
+					"pin": "hidden",
+					"fill": "#f23543",
+					"x": "0.7782",
+					"y": "0.5319"
+				},
+				{
+					"id": "ru",
+					"title": "Russia",
+					"description": "Russia",
+					"link": "russia.html",
+					"pin": "hidden",
+					"fill": "#f23543",
+					"x": "0.7681",
+					"y": "0.3352"
+				},
+				{
+					"id": "au",
+					"title": "Australia",
+					"description": "Australia",
+					"link": "australia.html",
+					"pin": "hidden",
+					"fill": "#fdca2a",
+					"x": "0.8563",
+					"y": "0.7957"
+				},
+				{
+					"id": "nz",
+					"title": "New Zealand",
+					"description": "New Zealand",
+					"pin": "hidden",
+					"fill": "#fdca2a",
+					"x": "0.9506",
+					"y": "0.8822"
+				},
+				{
+					"id": "br",
+					"title": "Brazil",
+					"description": "Brazil",
+					"link": "brazil.html",
+					"pin": "hidden",
+					"fill": "#29afa1",
+					"x": "0.3632",
+					"y": "0.7413"
+				},
+				{
+					"id": "ar",
+					"title": "Argentina",
+					"description": "Argentina",
+					"pin": "hidden",
+					"fill": "#29afa1",
+					"x": "0.3221",
+					"y": "0.8591"
+				}
+			]
+		}
+	]
+}

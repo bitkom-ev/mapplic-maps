@@ -1,0 +1,14 @@
+name: Mapplic Maps
+description: 'The most advanced custom interactive map plugin on the web'
+# core: 8.x
+package: Maps
+dependencies:
+  - entity
+type: module
+configure: mapplic_maps.admin_settings
+
+# Information added by Drupal.org packaging script on 2018-11-23
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'mapplic_maps'
+datestamp: 1542950884

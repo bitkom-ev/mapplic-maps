@@ -1,0 +1,109 @@
+uuid: 74b8bff0-4862-447e-84f4-427aeb22e7a9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.mapplic_landmark.body
+    - field.field.node.mapplic_landmark.field_background_colour
+    - field.field.node.mapplic_landmark.field_mapplic_pos_x
+    - field.field.node.mapplic_landmark.field_mapplic_pos_y
+    - field.field.node.mapplic_landmark.field_mapplic_svg_id
+    - field.field.node.mapplic_landmark.field_thumb_image
+    - image.style.thumbnail
+    - node.type.mapplic_landmark
+  module:
+    - path
+    - svg_image
+    - text
+id: node.mapplic_landmark.default
+targetEntityType: node
+bundle: mapplic_landmark
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_background_colour:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_mapplic_pos_x:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_mapplic_pos_y:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_mapplic_svg_id:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_thumb_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  promote: true
+  sticky: true

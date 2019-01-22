@@ -1,0 +1,22 @@
+uuid: a058ef21-ecd6-4384-961e-310c5a31ef09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mapplic_landmark
+  module:
+    - text
+id: node.mapplic_landmark.body
+field_name: body
+entity_type: node
+bundle: mapplic_landmark
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

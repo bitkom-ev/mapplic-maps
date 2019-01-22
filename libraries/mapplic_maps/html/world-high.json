@@ -1,0 +1,28 @@
+{
+	"mapwidth":"918",
+	"mapheight":"599",
+	"bottomLat": "-61.64157034388925",
+	"leftLng": "-183.27960486016542",
+	"topLat": "84.19150768499742",
+	"rightLng": "199.1028606741188",
+	"categories":[
+
+	],
+	"levels":[
+		{
+			"id":"world",
+			"title":"World",
+			"map":"maps/world-high.svg",
+			"locations":[
+				{
+					"id": "pos",
+					"title": "Position",
+					"description": "<p>Your geolocation.</p>",
+					"pin": "circular",
+					"x": "0.5",
+					"y": "0.5"
+				}
+			]
+		}
+	]
+}

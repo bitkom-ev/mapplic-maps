@@ -1,0 +1,14 @@
+uuid: cadd5863-a159-4031-b032-1540e6477053
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - mapplic
+name: 'Mapplic Landmark'
+type: mapplic_landmark
+description: 'Content type that can be used to provide additional information for <em>Mapplic Landmark</em>'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

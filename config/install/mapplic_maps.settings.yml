@@ -1,0 +1,26 @@
+mapplic_height: 1000
+mapplic_sidebar: false
+mapplic_mapfill: true
+mapplic_zoombuttons: true
+mapplic_clearbutton: true
+mapplic_minimap: false
+mapplic_locations: true
+mapplic_fullscreen: true
+mapplic_hovertip: true
+mapplic_search: false
+mapplic_animate: false
+mapplic_developer_mode: true
+mapplic_zoom: true
+mapplic_max_scale: 10
+mapplic_map_height: 800
+mapplic_map_width: 600
+_core:
+  default_config_hash: sA_ZjRim1DqATcVVv5bzxVZy_Y2idD60ULwIzSO9e60
+langcode: de
+mapplic_maps:
+  - '934'
+actions: null
+form_build_id: form-pjoj-ZuyylrITD1m7KQUgZdyMhVYFYHtN1zOUJYp3O8
+form_token: R-LXRK4mhm-9J5dvhhGtmTrvF0-UAr7NweXf4ttCY-Y
+form_id: mapplic_maps_admin_settings
+mapplic_map_source: /sites/smartschool/files/germany.svg
