@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\mapplic_maps\Controller\DefaultController.
+ * Contains \Drupal\mapplic\Controller\DefaultController.
  */
 
-namespace Drupal\mapplic_maps\Controller;
+namespace Drupal\mapplic\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Url;
@@ -15,29 +15,24 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Drupal\image\Entity\ImageStyle;
 
 /**
- * Default controller for the mapplic maps module.
+ * Default controller for the mapplic module.
  */
 class DefaultController extends ControllerBase {
 
-  public function _mapplic_maps_json() {
-      print('_mapplic_maps_json called');
+  public function _mapplic_json() {
     $settings = [
-      'mapwidth' => "600",
-      'mapheight' => "800",
-      'categories' => ['germany'],
+      'mapwidth' => "200",
+      'mapheight' => "130",
+      'categories' => [],
       'levels' => [],
     ];
 
     try {
-      $config = \Drupal::config('mapplic_maps.settings');
-      $mapId = $config->get('mapplic_maps');
-      $settings['levels'][0]['id'] = 'germany';
-      $settings['levels'][0]['title'] = 'Deutschland';
-      # https://stage.smart-school.de/sites/smartschool/files/germany.svg
-      $settings['levels'][0]['map'] = '/libraries/mapplic_maps/html/maps/germany.svg';
-      # /sites/smartschool/files/germany.svg
-      # /de/admin/content/files/usage/934
-      #$settings['levels'][0]['map'] = '/mapplic/svg/' . $mapId[0] . '/map.svg';
+      $config = \Drupal::config('mapplic.settings');
+      $mapId = $config->get('mapplic_map');
+      $settings['levels'][0]['id'] = 'world';
+      $settings['levels'][0]['title'] = 'World';
+      $settings['levels'][0]['map'] = '/mapplic/svg/' . $mapId[0] . '/map.svg';
     }  
     catch (Exception $e) {
       watchdog('entity_metadata_wrapper', 'entity_metadata_wrapper error in %error_loc', [
@@ -94,19 +89,15 @@ class DefaultController extends ControllerBase {
         }
       }
     rsort($settings['levels']);
-    // Calling all modules implementing hook_mapplic_maps_settings_alter():
-    \Drupal::moduleHandler()->alter('mapplic_maps_settings', $settings);
-    
-    kint($settings);
+    // Calling all modules implementing hook_mapplic_settings_alter():
+    \Drupal::moduleHandler()->alter('mapplic_settings', $settings);
 
     return new JsonResponse($settings);
   }
 
-  
-  
   public function _mapplic_svg($fid) {
     $headers = [
-      'Content-Type' => 'image/svg+xml',
+      'Content-Type' => 'text/csv; utf-8',
     ];
 
     try {

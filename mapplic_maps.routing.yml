@@ -1,21 +1,19 @@
-mapplic_maps.admin_settings:
-  path: /admin/config/services/mapplic_maps
+mapplic.admin_settings:
+  path: /admin/config/services/mapplic
   defaults:
-    _title: Mapplic Maps
-    _form: \Drupal\mapplic_maps\Form\MapplicMapsAdminSettings
+    _title: Mapplic
+    _form: \Drupal\mapplic\Form\MapplicAdminSettings
   requirements:
-    _permission: 'administer mapplic maps'
-    
-mapplic_maps.json:
-  path: /mapplic_maps/libraries/mapplic_maps/html/
+    _permission: 'administer mapplic'
+mapplic.json:
+  path: /mapplic/json
   defaults:
-    _controller: '\Drupal\mapplic_maps\Controller\DefaultController::_mapplic_maps_json'
+    _controller: '\Drupal\mapplic\Controller\DefaultController::_mapplic_json'
   requirements:
     _permission: 'access content'
-
-mapplic_maps.svg:
-  path: '/mapplic_maps/libraries/mapplic_maps/html/maps/'
+mapplic.svg:
+  path: '/mapplic/svg/{fid}/map.svg'
   defaults:
-    _controller: '\Drupal\mapplic_maps\Controller\DefaultController::_mapplic_svg'
+    _controller: '\Drupal\mapplic\Controller\DefaultController::_mapplic_svg'
   requirements:
     _permission: 'access content'

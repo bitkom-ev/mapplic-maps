@@ -1,17 +1,17 @@
-mapplic_maps:
+mapplic-map:
   version: 1.x
   css:
     theme:
-      libraries/mapplic_maps/html/css/magnific-popup.css: { scope: footer }
-      libraries/mapplic_maps/html/mapplic/mapplic.css: { scope: footer }
+      libraries/mapplic/html/css/magnific-popup.css: { scope: footer }
+      libraries/mapplic/html/mapplic/mapplic.css: { scope: footer }
       
   js:
-    libraries/mapplic_maps/html/js/hammer.min.js: {}
-    libraries/mapplic_maps/html/js/jquery.mousewheel.js: {}
-    #libraries/mapplic_maps/html/js/smoothscroll.js: {}
-    libraries/mapplic_maps/html/js/magnific-popup.js: {}
-    libraries/mapplic_maps/html/mapplic/mapplic.js: {}
-    js/mapplic_maps.js: {}
+    libraries/mapplic/html/js/hammer.min.js: {}
+    libraries/mapplic/html/js/jquery.mousewheel.js: {}
+    libraries/mapplic/html/js/smoothscroll.js: {}
+    libraries/mapplic/html/js/magnific-popup.js: {}
+    libraries/mapplic/html/mapplic/mapplic.js: {}
+    js/mapplic.js: {}
   dependencies:
     - core/jquery
     - core/drupalSettings
