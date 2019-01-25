@@ -11,7 +11,7 @@ mapplic_search: false
 mapplic_animate: false
 mapplic_developer_mode: true
 mapplic_zoom: true
-mapplic_max_scale: 10
+mapplic_max_scale: 4
 mapplic_map_height: 800
 mapplic_map_width: 600
 _core:
