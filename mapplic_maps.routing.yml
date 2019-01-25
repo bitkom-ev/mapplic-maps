@@ -30,6 +30,14 @@ mapplic_maps_europe.json:
   requirements:
     _permission: 'access content'
 
+mapplic_maps_world.json:
+  path: /maps/data/world.json
+  defaults:
+    _controller: '\Drupal\mapplic_maps\Controller\WorldController::_mapplic_maps_world_json'
+    _title: 'World json for mapplic_maps'
+  requirements:
+    _permission: 'access content'
+
 
 
 
