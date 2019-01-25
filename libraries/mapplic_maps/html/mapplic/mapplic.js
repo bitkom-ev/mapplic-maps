@@ -40,9 +40,9 @@
 		};
 
 		self.loc = {
-			more: 'More',
-			search: 'Search',
-			notfound: 'Nothing found. Please try a different search.'
+			more: Drupal.t('More'),
+			search: Drupal.t('Search'),
+			notfound: Drupal.t('Nothing found. Please try a different search.')
 		}
 
 		self.el = element;
@@ -106,7 +106,8 @@
 				this.title = $('<h4></h4>').addClass('mapplic-tooltip-title').appendTo(this.el);
 				this.content = $('<div></div>').addClass('mapplic-tooltip-content').appendTo(this.el);
 				this.desc = $('<div></div>').addClass('mapplic-tooltip-description').appendTo(this.content);
-				if (this.tooltiplink) this.link = $('<a>' + self.loc.more + '</a>').addClass('mapplic-popup-link').attr('href', '#').hide().appendTo(this.el);
+				//if (this.tooltiplink) this.link = $('<a>' + self.loc.more + '</a>').addClass('mapplic-popup-link').attr('href', '#').hide().appendTo(this.el);
+                                if (this.tooltiplink) this.link = $('<a>' + self.loc.more + '</a>').addClass('mapplic-popup-link').attr('href', '#').attr('target', '_blank').hide().appendTo(this.el);
 				this.triangle = $('<div></div>').addClass('mapplic-tooltip-triangle').prependTo(this.el);
 
 				self.map.append(this.el);
