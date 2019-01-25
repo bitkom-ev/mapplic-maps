@@ -5,5 +5,5 @@ dependencies: {  }
 id: node_type_mapplic_landmark
 action: page_redirect
 allow_override: 1
-redirect: /deutschland
+redirect: '<front>'
 redirect_code: 301
