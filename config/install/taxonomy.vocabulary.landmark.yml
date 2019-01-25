@@ -1,0 +1,9 @@
+uuid: ef40e948-902e-48b5-84f8-da696fb7f5ae
+langcode: de
+status: true
+dependencies: {  }
+name: Landmark
+vid: landmark
+description: 'Our landmark maps'
+hierarchy: 0
+weight: 0

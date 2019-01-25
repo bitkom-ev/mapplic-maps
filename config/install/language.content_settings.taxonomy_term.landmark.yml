@@ -1,0 +1,11 @@
+uuid: 49d1307a-1f17-48d6-98b8-c092e6a47136
+langcode: de
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.landmark
+id: taxonomy_term.landmark
+target_entity_type_id: taxonomy_term
+target_bundle: landmark
+default_langcode: site_default
+language_alterable: false
