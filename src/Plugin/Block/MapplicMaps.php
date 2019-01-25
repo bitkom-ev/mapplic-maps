@@ -15,8 +15,8 @@ use Drupal\Core\Url;
  *
  * @Block(
  *   id = "mapplic_maps_block",
- *   admin_label = @Translation("Mapplic Maps default germany block"),
- *   category = @Translation("Mapplic Maps Deutschland block")
+ *   admin_label = @Translation("Mapplic Maps block"),
+ *   category = @Translation("Mapplic Maps block")
  * )
  */
 class MapplicMaps extends BlockBase {
@@ -26,7 +26,7 @@ class MapplicMaps extends BlockBase {
      */
     public function build() {
         $config = \Drupal::config('mapplic_maps.settings');
-        
+        //print $config->get('mapplic_map_source');
         $mapplicMapsSettings = [
             'mapplic_maps' => [
                 'source' => $config->get('mapplic_map_source'),
@@ -62,6 +62,7 @@ class MapplicMaps extends BlockBase {
         ];
 
         return [
+            '#theme' => 'smartschool',
             '#type' => 'markup',
             '#markup' => '<div id="mapplic_maps"></div>',
             '#attached' => [

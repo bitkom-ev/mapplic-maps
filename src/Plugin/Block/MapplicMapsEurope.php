@@ -14,7 +14,7 @@ use Drupal\Core\Url;
  * Provides a 'mapplic_maps' Europe block.
  *
  * @Block(
- *   id = "mapplic_maps_block",
+ *   id = "mapplic_maps_europe_block",
  *   admin_label = @Translation("Mapplic Maps Europe block"),
  *   category = @Translation("Mapplic Maps Europe block")
  * )
