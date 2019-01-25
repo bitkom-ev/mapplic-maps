@@ -18,7 +18,7 @@ use Drupal\image\Entity\ImageStyle;
 class EuropeController extends ControllerBase {
 
     public function _mapplic_maps_europe_json() {
-        //kint('Europe _mapplic_maps_germany_json called');
+
         $settings = [
             'mapwidth' => "600",
             'mapheight' => "800",

@@ -31,7 +31,7 @@ class MapplicMapsGermany extends BlockBase {
         $mapplicMapsSettings = [
             'mapplic_maps' => [
                 'action' => 'tooltip',
-                'source' => $config->get('mapplic_map_source'),
+                'source' => 'maps/data/german.json',
                 'animate' => $config->get('mapplic_animate'),
                 'alphabetic' => false,
                 'clearbutton' => true,

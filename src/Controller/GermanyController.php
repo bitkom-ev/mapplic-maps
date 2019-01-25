@@ -18,11 +18,10 @@ use Drupal\image\Entity\ImageStyle;
 class GermanyController extends ControllerBase {
 
     public function _mapplic_maps_germany_json() {
-        //kint('Germany _mapplic_maps_germany_json called');
         $settings = [
             'mapwidth' => "600",
             'mapheight' => "800",
-            'categories' => ['land'],
+            'categories' => ['Deutschland'],
             'levels' => [],
         ];
 
