@@ -161,14 +161,14 @@ class MapplicMapsAdminSettings extends ConfigFormBase {
     ];
 
     $form['mapplic_zoombuttons'] = [
-      '#title' => t('Emable zoom buttons'),
+      '#title' => t('Enable zoom buttons'),
       '#description' => t('Show or hide the +/- zoom buttons.'),
       '#type' => 'checkbox',
       '#default_value' => $config->get('mapplic_zoombuttons'), //variable_get('mapplic_zoombuttons', TRUE),
     ];
 
     $form['mapplic_clearbutton'] = [
-      '#title' => t('Emable clear button'),
+      '#title' => t('Enable clear button'),
       '#description' => t('Whether to display the clear button.'),
       '#type' => 'checkbox',
       '#default_value' => $config->get('mapplic_clearbutton'), //variable_get('mapplic_clearbutton', TRUE),
