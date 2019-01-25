@@ -1,4 +1,4 @@
-uuid: 4769d310-2e0d-40b9-b070-efe36a6ac2a3
+uuid: f4545473-d529-45a2-b8e5-65a8c4964d6c
 langcode: de
 status: true
 dependencies:
@@ -8,15 +8,15 @@ dependencies:
     - system
   theme:
     - smartschool
-id: mapplicmapsblock
+id: mapplicmapsworldblock
 theme: smartschool
 region: content
 weight: -15
 provider: null
-plugin: mapplic_maps_block
+plugin: mapplic_maps_world_block
 settings:
-  id: mapplic_maps_block
-  label: 'Mapplic Maps Block'
+  id: mapplic_maps_world_block
+  label: 'Mapplic Maps World block'
   provider: mapplic_maps
   label_display: '0'
 visibility:
@@ -29,6 +29,6 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: /deutschland
+    pages: /map/welt
     negate: false
     context_mapping: {  }

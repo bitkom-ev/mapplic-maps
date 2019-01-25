@@ -1,0 +1,22 @@
+uuid: fa34f272-5ecf-4df8-ada3-e02cd9b42aeb
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: landmark
+label: Landmark
+type: 'canonical_entities:node'
+pattern: '/landmark/[node:nid]/[node:title]'
+selection_criteria:
+  887bfdd5-42e0-49c3-85de-82d309fbfe34:
+    id: node_type
+    bundles:
+      mapplic_landmark: mapplic_landmark
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 887bfdd5-42e0-49c3-85de-82d309fbfe34
+selection_logic: and
+weight: -5
+relationships: {  }

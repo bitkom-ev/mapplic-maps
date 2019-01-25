@@ -11,7 +11,7 @@ entity_type: node
 bundle: mapplic_landmark
 label: 'Mapplic Map id'
 description: 'Hier ein unique id eintragen. Wenn die Id mit dem map.svg übereinstimmt, dann wird dies gezogen.'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

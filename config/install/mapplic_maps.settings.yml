@@ -3,12 +3,12 @@ mapplic_sidebar: false
 mapplic_mapfill: false
 mapplic_zoombuttons: true
 mapplic_clearbutton: true
-mapplic_minimap: false
+mapplic_minimap: true
 mapplic_locations: false
 mapplic_fullscreen: false
 mapplic_hovertip: true
 mapplic_search: false
-mapplic_animate: false
+mapplic_animate: true
 mapplic_developer_mode: true
 mapplic_zoom: true
 mapplic_max_scale: 4
@@ -20,7 +20,7 @@ langcode: de
 mapplic_maps:
   - '934'
 actions: null
-form_build_id: form-RyRF2y5nQ3PeurufOvWHleWwjEcFnLAqMKKeGThYhCg
+form_build_id: form-rVUn323I0db1ib5NLdXZ_wGnJd61xpz-ul7bT3xFFHI
 form_token: Pu3fYm0Xp8Pw5cW4sXvld-n22EJo81OV7iksFenYgEY
 form_id: mapplic_maps_admin_settings
 mapplic_map_source: /modules/contrib/mapplic_maps/libraries/mapplic_maps/html/deutschland.json
