@@ -1,0 +1,834 @@
+{
+    "mapwidth": "1200",
+    "mapheight": "1200",
+    "minimap": "120",
+    "zoom": "6",
+    "fill": "#007262d",
+    "color": "#FF0000",
+    "categories": [
+        {
+            "id": "eu",
+            "title": "Europa",
+            "color": "#DADADA",
+            "show": "true"
+        },
+        {
+            "id": "ot",
+            "title": "andere Länder",
+            "color": "#b7a6bd",
+            "show": "true"
+        },
+        {
+            "id": "capitel",
+            "title": "Hauptstädte",
+            "color": "#b7a6bd",
+            "show": "true"
+        }
+    ],
+    "levels": [
+        {
+            "id": "europa",
+            "title": "Europa",
+            "map": "/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/europa.svg",
+            "minimap": "/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/europa-mini.jpg",
+            "locations": [
+                {
+                    "id": "al",
+                    "title": "Albanien",
+                    "description": "Albanien",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.6245",
+                    "y": "0.7661"
+                },
+                {
+                    "id": "ad",
+                    "title": "Andorra",
+                    "description": "Andorra ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "4",
+                    "x": "0.2849",
+                    "y": "0.7349"
+                },
+                {
+                    "id": "at",
+                    "title": "Österreich",
+                    "description": "Österreich ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.5036",
+                    "y": "0.6151"
+                },
+                {
+                    "id": "ba",
+                    "title": "Bosnien und Herzegowina",
+                    "description": "Bosnien und Herzegowina ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.5724",
+                    "y": "0.6953"
+                },
+                {
+                    "id": "be",
+                    "title": "Belgien",
+                    "description": "Belgien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.3526",
+                    "y": "0.5328"
+                },
+                {
+                    "id": "bg",
+                    "title": "Bulgarien",
+                    "description": "Bulgarien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.7047",
+                    "y": "0.7151"
+                },
+                {
+                    "id": "by",
+                    "title": "Weißrussland",
+                    "description": "Weißrussland ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "ot",
+                    "zoom": "2",
+                    "x": "0.6891",
+                    "y": "0.4318"
+                },
+                {
+                    "id": "ch",
+                    "title": "Schweiz",
+                    "description": "Schweiz ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "ot",
+                    "zoom": "3",
+                    "x": "0.4057",
+                    "y": "0.6328"
+                },
+                {
+                    "id": "bern",
+                    "title": "Bern",
+                    "description": "<p>Bern</p>",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "x": "0.3951",
+                    "y": "0.6249"
+                },
+                {
+                    "id": "cy",
+                    "title": "Zypern",
+                    "description": "Zypern  ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.9047",
+                    "y": "0.8588"
+                },
+                {
+                    "id": "de",
+                    "title": "Deutschland",
+                    "description": "<p>Deutschland ... </p>",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.4331",
+                    "y": "0.5437"
+                },
+                {
+                    "id": "berlin",
+                    "title": "Berlin",
+                    "description": "<p></p>",
+                    "label": "Berlin",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "x": "0.4753",
+                    "y": "0.4899"
+                },
+
+                {
+                    "id": "de-bw",
+                    "title": "Baden-Württemberg",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.3600",
+                    "y": "0.8200"
+                },
+                {
+                    "id": "de-be",
+                    "title": "Berlin",
+                    "category": "capitel",
+                    "description": "Berlin Hauptstadt von Deutschland",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "4",
+                    "x": "0.7690",
+                    "y": "0.3230"
+                },
+                {
+                    "id": "de-bb",
+                    "title": "Brandenburg",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "x": "0.7800",
+                    "y": "0.3700"
+                },
+                {
+                    "id": "de-hb",
+                    "title": "Bremen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "5",
+                    "x": "0.3491",
+                    "y": "0.2530"
+                },
+                {
+                    "id": "de-hh",
+                    "title": "Hamburg",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "5",
+                    "x": "0.4541",
+                    "y": "0.1655"
+                },
+                {
+                    "id": "de-he",
+                    "title": "Hessen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "4",
+                    "x": "0.3700",
+                    "y": "0.5600"
+                },
+                {
+                    "id": "de-mv",
+                    "title": "Mecklenburg-Vorpommern",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "x": "0.6700",
+                    "y": "0.16"
+                },
+                {
+                    "id": "de-ni",
+                    "title": "Niedersachsen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "x": "0.4330",
+                    "y": "0.2800"
+                },
+                {
+                    "id": "de-nw",
+                    "title": "Nordrhein-Westfalen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "x": "0.2300",
+                    "y": "0.4400"
+                },
+                {
+                    "id": "de-rp",
+                    "title": "Rheinland-Pfalz",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "4",
+                    "x": "0.2000",
+                    "y": "0.6400"
+                },
+                {
+                    "id": "de-sl",
+                    "title": "Saarland",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "4",
+                    "x": "0.1600",
+                    "y": "0.7200"
+                },
+                {
+                    "id": "de-sn",
+                    "title": "Sachsen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "x": "0.7500",
+                    "y": "0.5100"
+                },
+                {
+                    "id": "de-st",
+                    "title": "Sachsen-Anhalt",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "x": "0.6000",
+                    "y": "0.4000"
+                },
+                {
+                    "id": "de-sh",
+                    "title": "Schleswig-Holstein",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "x": "0.4400",
+                    "y": "0.1200"
+                },
+                {
+                    "id": "de-th",
+                    "title": "Thüringen",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "x": "0.55",
+                    "y": "0.5300"
+                },
+                {
+                    "id": "de-by",
+                    "title": "Bayern",
+                    "description": "",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "x": "0.6444",
+                    "y": "0.7786"
+                },
+
+                {
+                    "id": "gr",
+                    "title": "Griechenland",
+                    "description": "Griechenland",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "2",
+                    "category": "eu",
+                    "x": "0.6547",
+                    "y": "0.7995"
+                },
+                {
+                    "id": "dk",
+                    "title": "Dänemark",
+                    "description": "Dänemark  ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.4276",
+                    "y": "0.3984"
+                },
+                                                          {
+                    "id": "kopenhagen",
+                    "title": "Kopenhagen",
+                    "description": "<p>Kopenhagen</p>",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "x": "0.4682",
+                    "y": "0.4160"
+                },
+
+                {
+                    "id": "ew",
+                    "title": "Estland",
+                    "description": "Estland  ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.6307",
+                    "y": "0.3047"
+                },
+                {
+                    "id": "tallinn",
+                    "title": "Tallinn",
+                    "description": "<p>Tallinn</p>",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "x": "0.6113",
+                    "y": "0.2985"
+                },
+                {
+                    "id": "es",
+                    "title": "Spanien",
+                    "description": "Spanien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.1849",
+                    "y": "0.7786"
+                },
+                {
+                    "id": "fo",
+                    "title": "Färöer",
+                    "description": "Färöer ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.2474",
+                    "y": "0.2224"
+                },
+                {
+                    "id": "gg",
+                    "title": "Gibraltar",
+                    "description": "Gibraltar ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "x": "0.1266",
+                    "y": "0.8734"
+                },
+                {
+                    "id": "ie",
+                    "title": "Irland",
+                    "description": "Irland ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.1826",
+                    "y": "0.4424"
+                },
+                {
+                    "id": "is",
+                    "title": "Island",
+                    "description": "Island ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "ot",
+                    "zoom": "2",
+                    "x": "0.1443",
+                    "y": "0.1161"
+                },
+                {
+                    "id": "reykjavik",
+                    "title": "Reykjavik",
+                    "description": "<p></p>",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "x": "0.1091",
+                    "y": "0.1159"
+                },
+                {
+                    "id": "it",
+                    "title": "Italien",
+                    "description": "Italien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.4901",
+                    "y": "0.7422"
+                },
+                {
+                    "id": "rom",
+                    "title": "Rom",
+                    "description": "<p>Rom</p>",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "x": "0.4749",
+                    "y": "0.7451"
+                },
+
+                {
+                    "id": "fr",
+                    "title": "Frankreich",
+                    "description": "Frankreich ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.3119",
+                    "y": "0.6485"
+                },
+                {
+                    "id": "paris",
+                    "title": "Paris",
+                    "description": "<p>Paris</p>",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "x": "0.3200",
+                    "y": "0.5984"
+                },
+                {
+                    "id": "fi",
+                    "title": "Finnland",
+                    "description": "Finnland ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.6089",
+                    "y": "0.2182"
+                },
+                                {
+                    "id": "helsinki",
+                    "title": "Helsinki",
+                    "description": "<p>Helsinki</p>",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "x": "0.6098",
+                    "y": "0.2727"
+                },
+                {
+                    "id": "hr",
+                    "title": "Kroatien",
+                    "description": "Kroatien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.5464",
+                    "y": "0.6609"
+                },
+                {
+                    "id": "hu",
+                    "title": "Ungarn",
+                    "description": "Ungarn.",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.5819",
+                    "y": "0.6161"
+                },
+                {
+                    "id": "li",
+                    "title": "Liechtenstein",
+                    "description": "Liechtenstein ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "4",
+                    "x": "0.4307",
+                    "y": "0.6268"
+                },
+                {
+                    "id": "lv",
+                    "title": "Lettland",
+                    "description": "Lettland ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.6392",
+                    "y": "0.3542"
+                },
+                {
+                    "id": "lt",
+                    "title": "Littauen",
+                    "description": "Littauen ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.6285",
+                    "y": "0.3947"
+                },
+                {
+                    "id": "lu",
+                    "title": "Luxemburg",
+                    "description": "Luxemburg  ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.3780",
+                    "y": "0.5580"
+                },
+                {
+                    "id": "md",
+                    "title": "Moldawien",
+                    "description": "Moldawien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "ot",
+                    "zoom": "2",
+                    "x": "0.7390",
+                    "y": "0.5908"
+                },
+                {
+                    "id": "me",
+                    "title": "Montenegro",
+                    "description": "Montenegro ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.6027",
+                    "y": "0.7256"
+                },
+                {
+                    "id": "mk",
+                    "title": "Mazedonien",
+                    "description": "Mazedonien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.6499",
+                    "y": "0.7496"
+                },
+                {
+                    "id": "mt",
+                    "title": "Malta",
+                    "description": "Malta ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "4",
+                    "x": "0.5276",
+                    "y": "0.9087"
+                },
+                {
+                    "id": "nl",
+                    "title": "Niederlande",
+                    "description": "Niederlande ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.3755",
+                    "y": "0.4911"
+                },
+                {
+                    "id": "amsterdam",
+                    "title": "Amsterdam",
+                    "description": "<p></p>",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "lat": "52.373412",
+                    "lng": "4.896911"
+                },
+                {
+                    "id": "no",
+                    "title": "Norwegen",
+                    "description": "Norwegen ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "ot",
+                    "zoom": "2",
+                    "x": "0.4234",
+                    "y": "0.2713"
+                },
+                {
+                    "id": "pl",
+                    "title": "Polen",
+                    "description": "Polen ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.5714",
+                    "y": "0.4943"
+                },
+                {
+                    "id": "pt",
+                    "title": "Portugal",
+                    "description": "Portugal ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.0922",
+                    "y": "0.7734"
+                },
+                {
+                    "id": "rs",
+                    "title": "Serbien",
+                    "description": "Serbien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "ot",
+                    "zoom": "2",
+                    "x": "0.6245",
+                    "y": "0.6859"
+                },
+                {
+                    "id": "ro",
+                    "title": "Rumänien",
+                    "description": "Rumänien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "2",
+                    "x": "0.6859",
+                    "y": "0.6318"
+                },
+                {
+                    "id": "ru",
+                    "title": "Russland",
+                    "description": "Russland ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "ot",
+                    "zoom": "2",
+                    "x": "0.8734",
+                    "y": "0.2953"
+                },
+                {
+                    "id": "mоskau",
+                    "title": "Моskau",
+                    "description": "<p>Моskau.</p>",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "x": "0.8500",
+                    "y": "0.2700"
+                },
+                {
+                    "id": "si",
+                    "title": "Slowenien",
+                    "description": "Slowenien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.5182",
+                    "y": "0.6484"
+                },
+                {
+                    "id": "sk",
+                    "title": "Slowakei",
+                    "description": "Slowakei ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.6137",
+                    "y": "0.5655"
+                },
+                {
+                    "id": "se",
+                    "title": "Schweden",
+                    "description": "Schweden ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "ot",
+                    "zoom": "2",
+                    "x": "0.4953",
+                    "y": "0.2276"
+                },
+                {
+                    "id": "cz",
+                    "title": "Tschechien",
+                    "description": "Tschechien ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "3",
+                    "category": "eu",
+                    "x": "0.5205",
+                    "y": "0.5533"
+                },
+                {
+                    "id": "ua",
+                    "title": "Ukraine",
+                    "description": "Ukraine ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "ot",
+                    "zoom": "2",
+                    "x": "0.7728",
+                    "y": "0.5172"
+                },
+                {
+                    "id": "gb",
+                    "title": "Vereinigtes Königreich",
+                    "description": "England ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "zoom": "2",
+                    "category": "ot",
+                    "x": "0.2714",
+                    "y": "0.4765"
+                },
+                {
+                    "id": "london",
+                    "title": "London",
+                    "description": "<p></p>",
+                    "category": "capitel",
+                    "about": "Hauptstadt",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "fill": "#4d5e6d",
+                    "x": "0.2828",
+                    "y": "0.5050"
+                },
+                {
+                    "id": "vatikanstadt",
+                    "title": "Vatikanstadt",
+                    "category": "ot",
+                    "description": "Vatikanstadt ... ",
+                    "about": "Katholische kirche",
+                    "pin": "pin-dot pin-lg",
+                    "zoom": "5",
+                    "fill": "#FFFFFF",
+                    "x": "0.4825",
+                    "y": "0.7595"
+                },
+                {
+                    "id": "xk",
+                    "title": "Kosovo",
+                    "description": "Kosovo ... ",
+                    "pin": "hidden",
+                    "fill": "#007EB4",
+                    "category": "eu",
+                    "zoom": "3",
+                    "x": "0.6318",
+                    "y": "0.7265"
+                }
+
+            ]
+        }
+    ]
+}
