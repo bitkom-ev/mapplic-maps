@@ -1,0 +1,81 @@
+uuid: acf91dbb-060c-4bcd-aabd-115d7fcd12f8
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_mapplic_pin
+field_name: field_mapplic_pin
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: pin-smartschool
+      label: pin-smartschool
+    -
+      value: hidden
+      label: hidden
+    -
+      value: pin-classic
+      label: pin-classic
+    -
+      value: pin-marker
+      label: pin-marker
+    -
+      value: pin-disk
+      label: pin-disk
+    -
+      value: pin-ribbon
+      label: pin-ribbon
+    -
+      value: pin-dot
+      label: pin-dot
+    -
+      value: orange
+      label: orange
+    -
+      value: yellow
+      label: yellow
+    -
+      value: green
+      label: green
+    -
+      value: blue
+      label: blue
+    -
+      value: purple
+      label: purple
+    -
+      value: circular
+      label: circular
+    -
+      value: circle
+      label: circle
+    -
+      value: transparent
+      label: transparent
+    -
+      value: pin-label
+      label: pin-label
+    -
+      value: pin-md
+      label: pin-md
+    -
+      value: pin-lg
+      label: pin-lg
+    -
+      value: pin-xl
+      label: pin-xl
+    -
+      value: pin-pulse
+      label: pin-pulse
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

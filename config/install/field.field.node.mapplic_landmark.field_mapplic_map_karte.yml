@@ -1,0 +1,29 @@
+uuid: 4e0be1f2-976f-4fe1-b2af-3ee49ee640a8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mapplic_map_karte
+    - node.type.mapplic_landmark
+    - taxonomy.vocabulary.landkarten
+id: node.mapplic_landmark.field_mapplic_map_karte
+field_name: field_mapplic_map_karte
+entity_type: node
+bundle: mapplic_landmark
+label: 'Mapplic Map Karte'
+description: 'Wählen Sie hier aus, in welcher Karte die Landmark eingesetzt werden kann.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      landkarten: landkarten
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

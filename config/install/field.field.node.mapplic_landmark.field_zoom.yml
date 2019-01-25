@@ -1,0 +1,25 @@
+uuid: 63bf87c9-d57e-4333-97ca-3b8fade50b98
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zoom
+    - node.type.mapplic_landmark
+id: node.mapplic_landmark.field_zoom
+field_name: field_zoom
+entity_type: node
+bundle: mapplic_landmark
+label: zoom
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 3
+default_value_callback: ''
+settings:
+  min: 1
+  max: 10
+  prefix: ''
+  suffix: ''
+field_type: integer

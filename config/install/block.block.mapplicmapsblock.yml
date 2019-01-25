@@ -1,6 +1,6 @@
 uuid: f8bd939c-8fa6-4fd5-9809-632a2604fd1e
 langcode: de
-status: true
+status: false
 dependencies:
   module:
     - ctools
@@ -18,7 +18,7 @@ settings:
   id: mapplic_maps_block
   label: 'Mapplic Maps block'
   provider: mapplic_maps
-  label_display: visible
+  label_display: '0'
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'

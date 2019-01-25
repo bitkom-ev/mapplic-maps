@@ -1,0 +1,19 @@
+uuid: b4f54fff-4e15-482d-bb01-b05a499ecf8f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mapplic_map_id
+    - node.type.mapplic_landmark
+id: node.mapplic_landmark.field_mapplic_map_id
+field_name: field_mapplic_map_id
+entity_type: node
+bundle: mapplic_landmark
+label: 'mapplic map id'
+description: "Die Map id kann entweder frei gewählt werden. Sie muss unique sein.<br>\r\nJe nach verwendeter Karte  entspricht sie einer <path id=\"de-sh\" in der karte.svg.<br>\r\nBeispiel Länder: de = Deutschland oder de-by = Bayern berlin = Berlin."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

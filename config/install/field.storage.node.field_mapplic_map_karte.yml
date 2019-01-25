@@ -1,17 +1,16 @@
-uuid: 132a5f7d-c24a-4c94-a1c8-9e05f271d66e
+uuid: e6e74d40-916b-4e3b-8111-c23c513e7c24
 langcode: de
 status: true
 dependencies:
   module:
     - node
-id: node.field_mapplic_svg_id
-field_name: field_mapplic_svg_id
+    - taxonomy
+id: node.field_mapplic_map_karte
+field_name: field_mapplic_map_karte
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

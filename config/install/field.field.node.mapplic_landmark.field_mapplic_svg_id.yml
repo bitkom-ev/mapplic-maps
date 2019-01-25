@@ -9,13 +9,11 @@ id: node.mapplic_landmark.field_mapplic_svg_id
 field_name: field_mapplic_svg_id
 entity_type: node
 bundle: mapplic_landmark
-label: 'Mapplic svg id'
-description: 'Hier bitte die Datei mit dem Icon heraussuchen: https://stage.smart-school.de/de/admin/content/files und die fid aus edit eintragen.'
+label: 'Mapplic Map id'
+description: 'Hier ein unique id eintragen. Wenn die Id mit dem map.svg übereinstimmt, dann wird dies gezogen.'
 required: false
 translatable: false
-default_value:
-  -
-    value: '935'
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: string

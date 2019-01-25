@@ -1,0 +1,23 @@
+uuid: 2a5d3492-2fad-4d02-aa88-0d529c2f7989
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mapplic_pin
+    - node.type.mapplic_landmark
+  module:
+    - options
+id: node.mapplic_landmark.field_mapplic_pin
+field_name: field_mapplic_pin
+entity_type: node
+bundle: mapplic_landmark
+label: 'mapplic pin'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: pin-smartschool
+default_value_callback: ''
+settings: {  }
+field_type: list_string

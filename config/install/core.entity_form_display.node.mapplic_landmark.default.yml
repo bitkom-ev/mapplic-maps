@@ -5,15 +5,18 @@ dependencies:
   config:
     - field.field.node.mapplic_landmark.body
     - field.field.node.mapplic_landmark.field_background_colour
+    - field.field.node.mapplic_landmark.field_link
+    - field.field.node.mapplic_landmark.field_mapplic_map_karte
+    - field.field.node.mapplic_landmark.field_mapplic_pin
     - field.field.node.mapplic_landmark.field_mapplic_pos_x
     - field.field.node.mapplic_landmark.field_mapplic_pos_y
     - field.field.node.mapplic_landmark.field_mapplic_svg_id
-    - field.field.node.mapplic_landmark.field_maps_json
     - field.field.node.mapplic_landmark.field_thumb_image
+    - field.field.node.mapplic_landmark.field_zoom
     - image.style.thumbnail
     - node.type.mapplic_landmark
   module:
-    - file
+    - link
     - path
     - svg_image
     - text
@@ -33,11 +36,56 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 9
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_background_colour:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mapplic_map_karte:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mapplic_pin:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mapplic_pos_x:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_mapplic_pos_y:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_mapplic_svg_id:
     type: string_textfield
     weight: 3
     region: content
@@ -45,46 +93,24 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_mapplic_pos_x:
-    type: number
-    weight: 4
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  field_mapplic_pos_y:
-    type: number
-    weight: 5
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  field_mapplic_svg_id:
-    type: string_textfield
-    weight: 6
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_maps_json:
-    weight: 2
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
-    region: content
   field_thumb_image:
     type: image_image
-    weight: 7
+    weight: 9
     region: content
     settings:
       preview_image_style: thumbnail
       progress_indicator: throbber
     third_party_settings: {  }
+  field_zoom:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   path:
     type: path
-    weight: 10
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -92,7 +118,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 14
     region: content
     third_party_settings: {  }
   title:
@@ -105,7 +131,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60

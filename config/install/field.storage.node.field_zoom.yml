@@ -1,17 +1,16 @@
-uuid: 132a5f7d-c24a-4c94-a1c8-9e05f271d66e
+uuid: 15033873-3450-4200-a17e-617f7bc8669c
 langcode: de
 status: true
 dependencies:
   module:
     - node
-id: node.field_mapplic_svg_id
-field_name: field_mapplic_svg_id
+id: node.field_zoom
+field_name: field_zoom
 entity_type: node
-type: string
+type: integer
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

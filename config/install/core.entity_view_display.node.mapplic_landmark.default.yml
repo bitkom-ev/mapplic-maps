@@ -5,14 +5,18 @@ dependencies:
   config:
     - field.field.node.mapplic_landmark.body
     - field.field.node.mapplic_landmark.field_background_colour
+    - field.field.node.mapplic_landmark.field_link
+    - field.field.node.mapplic_landmark.field_mapplic_map_karte
+    - field.field.node.mapplic_landmark.field_mapplic_pin
     - field.field.node.mapplic_landmark.field_mapplic_pos_x
     - field.field.node.mapplic_landmark.field_mapplic_pos_y
     - field.field.node.mapplic_landmark.field_mapplic_svg_id
-    - field.field.node.mapplic_landmark.field_maps_json
     - field.field.node.mapplic_landmark.field_thumb_image
+    - field.field.node.mapplic_landmark.field_zoom
     - node.type.mapplic_landmark
   module:
-    - file
+    - link
+    - options
     - svg_image
     - text
     - user
@@ -36,6 +40,33 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_link:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mapplic_map_karte:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mapplic_pin:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_mapplic_pos_x:
     type: number_decimal
     weight: 3
@@ -66,14 +97,6 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  field_maps_json:
-    weight: 6
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    type: file_default
-    region: content
   field_thumb_image:
     type: image
     weight: 1
@@ -87,6 +110,15 @@ content:
         width: ''
         height: ''
     third_party_settings: {  }
+  field_zoom:
+    weight: 9
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
 hidden:
   langcode: true
   links: true

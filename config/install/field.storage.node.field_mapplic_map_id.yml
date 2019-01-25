@@ -1,11 +1,11 @@
-uuid: 132a5f7d-c24a-4c94-a1c8-9e05f271d66e
+uuid: b1b629d0-98a3-4706-ad61-aa332a8224a9
 langcode: de
 status: true
 dependencies:
   module:
     - node
-id: node.field_mapplic_svg_id
-field_name: field_mapplic_svg_id
+id: node.field_mapplic_map_id
+field_name: field_mapplic_map_id
 entity_type: node
 type: string
 settings:
