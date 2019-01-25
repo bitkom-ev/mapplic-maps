@@ -7,14 +7,34 @@ mapplic_maps.admin_settings:
     _permission: 'administer mapplic maps'
     
 mapplic_maps.json:
-  path: /mapplic_maps/libraries/mapplic_maps/html/
+  path: /maps/data/deutschland.json
   defaults:
     _controller: '\Drupal\mapplic_maps\Controller\DefaultController::_mapplic_maps_json'
+    _title: 'Deutschland json for mapplic_maps'
   requirements:
     _permission: 'access content'
 
+mapplic_maps_germany.json:
+  path: /maps/data/germany.json
+  defaults:
+    _controller: '\Drupal\mapplic_maps\Controller\GermanyController::_mapplic_maps_germany_json'
+    _title: 'Germany json for mapplic_maps'
+  requirements:
+    _permission: 'access content'
+
+mapplic_maps_europe.json:
+  path: /maps/data/europe.json
+  defaults:
+    _controller: '\Drupal\mapplic_maps\Controller\EuropeController::_mapplic_maps_europe_json'
+    _title: 'Europe json for mapplic_maps'
+  requirements:
+    _permission: 'access content'
+
+
+
+
 mapplic_maps.svg:
-  path: '/mapplic_maps/libraries/mapplic_maps/html/maps/'
+  path: '/maps/germany.svg'
   defaults:
     _controller: '\Drupal\mapplic_maps\Controller\DefaultController::_mapplic_svg'
   requirements:
