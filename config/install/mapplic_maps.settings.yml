@@ -16,7 +16,7 @@ mapplic_map_height: 800
 mapplic_map_width: 600
 _core:
   default_config_hash: sA_ZjRim1DqATcVVv5bzxVZy_Y2idD60ULwIzSO9e60
-langcode: de
+langcode: en
 mapplic_maps:
   - '934'
 actions: null

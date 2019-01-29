@@ -1,15 +1,12 @@
 uuid: 4769d310-2e0d-40b9-b070-efe36a6ac2a3
-langcode: de
+langcode: en
 status: true
 dependencies:
   module:
     - ctools
     - mapplic_maps
     - system
-  theme:
-    - smartschool
 id: mapplicmapsblock
-theme: smartschool
 region: content
 weight: -15
 provider: null
