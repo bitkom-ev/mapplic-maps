@@ -1,0 +1,5 @@
+hello.config:
+  title: 'Mapplic Maps Translatable config'
+  base_route_name: mapplic_maps.admin.config
+  names:
+    - mapplic_maps.config
