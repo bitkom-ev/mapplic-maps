@@ -1,10 +1,11 @@
 name: Mapplic Maps
-description: 'The most advanced custom interactive map plugin on the web'
+description: 'Fork of Mapplic Maps which integrates mapplic jquery'
 # core: 8.x
 package: Maps
 dependencies:
   - entity
   - dynamic_entity_reference
+  - jquery_colorpicker
 type: module
 configure: mapplic_maps.admin_settings
 
