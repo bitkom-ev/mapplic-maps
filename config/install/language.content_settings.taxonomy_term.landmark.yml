@@ -1,5 +1,5 @@
-uuid: 49d1307a-1f17-48d6-98b8-c092e6a47136
-langcode: en
+uuid: 6955008c-eff5-428e-b09d-a92c9c26d8d1
+langcode: de
 status: true
 dependencies:
   config:
@@ -7,5 +7,5 @@ dependencies:
 id: taxonomy_term.landmark
 target_entity_type_id: taxonomy_term
 target_bundle: landmark
-default_langcode: site_default
+default_langcode: de
 language_alterable: false

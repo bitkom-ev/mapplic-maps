@@ -26,6 +26,6 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: /map/welt
+    pages: /map/weltkarte
     negate: false
     context_mapping: {  }
