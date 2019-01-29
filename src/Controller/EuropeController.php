@@ -49,7 +49,7 @@ class EuropeController extends ControllerBase {
         $query = \Drupal::entityQuery('node');
         $query->condition('type', 'mapplic_landmark')
                 ->condition('status', 1)
-                ->condition('landkarten', 558) // 558 = europa
+                ->condition('field_mapplic_map_karte.entity:taxonomy_term.name', 'Europa', '=') // Deutschland / Europa / Welt 
                 ->sort('title', 'ASC');
         $result = $query->execute();
         if (isset($result) && !empty($result)) {

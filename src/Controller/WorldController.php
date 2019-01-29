@@ -40,17 +40,13 @@ class WorldController extends ControllerBase {
 
         $nodes = [];
         /**
-          taxonomy landkarten ::
-          Deutschland = 557
-          Europa      = 558
-          Welt        = 559
+          taxonomy landmark anlegen: Deutschland / Europa / Welt
          */
         $query = \Drupal::entityQuery('node');
-        $query
-                ->condition('type', 'mapplic_landmark')
-                ->condition('status', 1)
-                ->condition('field_mapplic_map_karte', 559) // Welt= 559 on stage!!
-                ->sort('title', 'ASC');
+        $query->condition('type', 'mapplic_landmark')
+              ->condition('status', 1)
+              ->condition('field_mapplic_map_karte.entity:taxonomy_term.name', 'Welt', '=') // Deutschland / Europa / Welt 
+              ->sort('title', 'ASC');
 
         $result = $query->execute();
         if (isset($result) && !empty($result)) {

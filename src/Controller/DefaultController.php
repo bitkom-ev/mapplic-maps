@@ -54,7 +54,7 @@ class DefaultController extends ControllerBase {
         $query
                 ->condition('type', 'mapplic_landmark')
                 ->condition('status', 1)
-                ->condition('field_mapplic_map_karte', 557) // Deutschland = 557 'value', 'Deutschland', '='
+                ->condition('field_mapplic_map_karte:taxonomy_term.name', 'Deutschland', '=') // Deutschland = 557 'value', 'Deutschland', '='
                 ->sort('title', 'ASC');
 
         $result = $query->execute();
