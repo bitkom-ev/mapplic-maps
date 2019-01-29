@@ -59,33 +59,57 @@ class EuropeController extends ControllerBase {
             return;
         }
 
-        foreach ($nodes as $node) {
+foreach ($nodes as $node) {
             try {
                 /**
-                  $thumb = $description = NULL;
+                 * */
+                  
+                  $thumb = NULL; 
+                  $uri = NULL;
                   $thumb = $node->get('field_thumb_image')->getValue()[0]['target_id'];
                   if ($thumb != NULL) {
                   $file = File::load($thumb);
                   $uri = $file->getFileUri();
                   }
+                  $thumb_url = NULL;
                   if ($uri != NULL) {
-                  $thumb_url = ImageStyle::load('mapplic_thumb')->buildUrl($uri); //image_style_url("mapplic_thumb", $thumb['uri']);
+                    $thumb_url = ImageStyle::load('mapplic_thumb')->buildUrl($uri); //image_style_url("mapplic_thumb", $thumb['uri']);
                   }
-                 * */
+                
+                  
+                $description = NULL;
+                $about = NULL;
                 if ($node->__isSet('body')) {
                     $description = $node->get('body')->getValue();
-                    $about = $description[0]['summary'];
-                    $description = $description[0]['value'];
+                    if($description != NULL) {
+                        $about = strip_tags($description[0]['summary']);
+                    }
+                    $description = strip_tags($description[0]['value'], '<a><b><p><br><div><img>');
                 }
+                /**
+                 * optional fields check if:
+                 */
+                if(isset($node->get('field_mapplic_svg_id')->getValue()[0]['value'])) {
+                    $id = $node->get('field_mapplic_svg_id')->getValue()[0]['value'];
+                }
+                if(isset($node->get('field_mapplic_map_id')->getValue()[0]['value'])) {
+                    $id = $node->get('field_mapplic_map_id')->getValue()[0]['value'];
+                }
+                
+                if(isset($node->get('field_link')->getValue()[0]['uri'])) {
+                    $link = $node->get('field_link')->getValue()[0]['uri'];
+                }
+                
+                
                 $settings['levels'][0]['locations'][] = [
-                    'id' => $node->get('field_mapplic_svg_id')->getValue()[0]['value'], //$wrapper->mapplic_svg_id->value(),
+                    'id' => $id, //$wrapper->mapplic_svg_id->value(), $node->get('field_mapplic_svg_id')->getValue()[0]['value']
                     'title' => $node->getTitle(),
-                    'description' => strip_tags($description, '<a><b><p><br><div><img>'),
-                    'label' => strip_tags($about),
+                    'description' => $description,
+                    'label' => $about,
                     'pin' => $node->get('field_mapplic_pin')->getValue()[0]['value'] ?: 'hidden',
                     'fill' => $node->get('field_background_colour')->getValue()[0]['value'] ?: '',
-                    //'thumbnail' => $thumb_url,
-                    'link' => $node->get('field_link')->getValue()[0]['uri'],
+                    'thumbnail' => $thumb_url,
+                    'link' => $link, // $node->get('field_link')->getValue()[0]['uri'],
                     'zoom' => $node->get('field_zoom')->getValue()[0]['value'],
                     //'pin' => "hidden",
                     'x' => $node->get('field_mapplic_pos_x')->getValue()[0]['value'], //$wrapper->mapplic_pos_x->value(),
