@@ -4,6 +4,7 @@ description: 'The most advanced custom interactive map plugin on the web'
 package: Maps
 dependencies:
   - entity
+  - dynamic_entity_reference
 type: module
 configure: mapplic_maps.admin_settings
 
