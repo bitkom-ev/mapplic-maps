@@ -14,7 +14,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Mapplic Landmark'
 type: mapplic_landmark
-description: 'Content type that can be used to provide additional information for <em>Mapplic Landmark</em>'
+description: "Content type that can be used to provide additional information for <em>Mapplic Landmark</em>\r\n"
 help: ''
 new_revision: false
 preview_mode: 1

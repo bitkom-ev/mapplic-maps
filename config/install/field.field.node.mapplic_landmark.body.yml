@@ -12,7 +12,7 @@ field_name: body
 entity_type: node
 bundle: mapplic_landmark
 label: Body
-description: ''
+description: "= description which will displayed in the tooltip\r\n= about a short text displayed in the sidebar if enabled."
 required: false
 translatable: true
 default_value: {  }

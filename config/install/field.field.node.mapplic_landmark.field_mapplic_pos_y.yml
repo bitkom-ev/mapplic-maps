@@ -10,7 +10,7 @@ field_name: field_mapplic_pos_y
 entity_type: node
 bundle: mapplic_landmark
 label: 'mapplic pos y'
-description: 'Trage hier bitte die y-Position auf der Karte ein. Werte: ( 0 - 0,5 - 1)'
+description: "Trage hier bitte die y-Position auf der Karte ein. Werte: ( 0 - 0,5 - 1)\r\nSie finden die Positionen oben auf der Karte, auf der der Landmark verwendet werden soll, wenn sie mit der Maus über die Karte fahren.<br>\r\n\"Activate developer mode\" muss hier /admin/config/services/mapplic_maps aktiviert sein!"
 required: true
 translatable: false
 default_value:
