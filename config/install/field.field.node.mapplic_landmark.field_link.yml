@@ -12,7 +12,7 @@ field_name: field_link
 entity_type: node
 bundle: mapplic_landmark
 label: Link
-description: 'Link zur Homepage etc. eintragen'
+description: 'Link - URL associated with the landmark (start with http://). Popup''s More button will link to this address, use the Action attribute to change the default behavior.'
 required: false
 translatable: true
 default_value: {  }

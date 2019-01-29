@@ -11,8 +11,8 @@ id: node.mapplic_landmark.field_thumb_image
 field_name: field_thumb_image
 entity_type: node
 bundle: mapplic_landmark
-label: 'Mapplic Tooltip bild'
-description: 'Laden Sie hier in Bild zur Illustration des Tooltips hoch. (wird 40 x40 px)'
+label: 'Mapplic Tooltip Bild'
+description: 'Laden Sie hier ein kleines Bild (max. 400 x 400 px ) zur Illustration des Tooltips hoch. (wird 40 x40 px)'
 required: false
 translatable: false
 default_value: {  }

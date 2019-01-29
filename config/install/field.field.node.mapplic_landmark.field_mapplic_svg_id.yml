@@ -1,4 +1,4 @@
-uuid: efd90d77-b2b9-40d4-b315-9318f5f63b58
+uuid: 60c95104-d2de-4915-a2d0-4952164595f0
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,8 @@ id: node.mapplic_landmark.field_mapplic_svg_id
 field_name: field_mapplic_svg_id
 entity_type: node
 bundle: mapplic_landmark
-label: 'Mapplic Map id'
-description: 'Hier ein unique id eintragen. Wenn die Id mit dem map.svg übereinstimmt, dann wird dies gezogen.'
+label: 'Mapplic svg id'
+description: 'Unique mapplic svg map id'
 required: true
 translatable: false
 default_value: {  }

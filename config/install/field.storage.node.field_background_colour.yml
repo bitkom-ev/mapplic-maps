@@ -1,18 +1,72 @@
-uuid: 41c3d247-52a6-408a-b1af-05c1430a6df9
-langcode: en
+uuid: c7412b2c-a159-4511-8d2a-6ec9d92e53f7
+langcode: de
 status: true
 dependencies:
   module:
     - node
+    - options
 id: node.field_background_colour
 field_name: field_background_colour
 entity_type: node
-type: string
+type: list_string
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  allowed_values:
+    -
+      value: '#07262d'
+      label: Petrol
+    -
+      value: '#009FE3'
+      label: Cyan
+    -
+      value: '#FFFFFF'
+      label: Weiß
+    -
+      value: '#4a297f'
+      label: Lila
+    -
+      value: '#801e16'
+      label: Weinrot
+    -
+      value: '#e8412e'
+      label: Trendorange
+    -
+      value: '#e1a01a'
+      label: Orange
+    -
+      value: '#ecd73d'
+      label: Sonnengelb
+    -
+      value: '#7f5840'
+      label: Braun
+    -
+      value: '#a9c335'
+      label: Grasgrün
+    -
+      value: '#97c4e3'
+      label: Himmelblau
+    -
+      value: '#11516d'
+      label: Meeresblau
+    -
+      value: '#b92480'
+      label: Magenta
+    -
+      value: '#575757'
+      label: 'Schwarz 80 %'
+    -
+      value: '#B2B2B2'
+      label: 'Schwarz40 %'
+    -
+      value: '#878787'
+      label: 'Schwarz60 %'
+    -
+      value: '#DADADA'
+      label: 'Schwarz20 %'
+    -
+      value: '#EDEDED'
+      label: 'Schwarz10 %'
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true
