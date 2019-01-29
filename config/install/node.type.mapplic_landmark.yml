@@ -4,7 +4,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - mapplic
+      - mapplic_maps
   module:
     - menu_ui
 third_party_settings:
