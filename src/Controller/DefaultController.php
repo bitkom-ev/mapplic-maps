@@ -78,8 +78,12 @@ class DefaultController extends ControllerBase {
                     $about = $description[0]['summary'];
                     $description = $description[0]['value'];
                 }
+
+                if (isset($node->get('field_mapplic_map_id')->getValue()[0]['value'])) {
+                    $id = $node->get('field_mapplic_map_id')->getValue()[0]['value'];
+                }
                 $settings['levels'][0]['locations'][] = [
-                    'id' => $node->get('field_mapplic_svg_id')->getValue()[0]['value'], //$wrapper->mapplic_svg_id->value(),
+                    'id' => $id,
                     'title' => $node->getTitle(),
                     'label' => strip_tags($about),
                     'description' => strip_tags($description, '<a><b><p><br><div><img>'),

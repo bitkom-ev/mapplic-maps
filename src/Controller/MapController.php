@@ -2,36 +2,40 @@
 
 /**
  * @file
- * Contains \Drupal\mapplic_maps\Controller\EuropeController.
+ * Contains \Drupal\mapplic_maps\Controller\MapController.
  */
 
 namespace Drupal\mapplic_maps\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\file\Entity\File;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Drupal\image\Entity\ImageStyle;
 
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
+
 /**
- * Europe controller for the mapplic maps module.
+ * Map controller for the mapplic maps module.
  */
-class EuropeController extends ControllerBase {
+class MapController extends ControllerBase {
 
-    public function _mapplic_maps_europe_json() {
-
+    public function _mapplic_maps_map_json(Request $map_width, Request $map_height, Request $map) {
+        
+        kint(explode($map, '.'));
+        $map_name[0] = explode($map, '.');
+        
         $settings = [
-            'mapwidth' => "600",
-            'mapheight' => "800",
-            'categories' => ['state'],
+            'mapwidth' => $map_width, // 1200 760
+            'mapheight' => $map_height,
+            'categories' => [$map],
             'levels' => [],
         ];
-
         try {
             $config = \Drupal::config('mapplic_maps.settings');
-            $settings['levels'][0]['id'] = 'europe';
-            $settings['levels'][0]['title'] = 'Europa';
-            $settings['levels'][0]['map'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/europe.svg';
-            $settings['levels'][0]['minimap'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/europe-mini.jpg';
+            $settings['levels'][0]['id'] = 'mapplic-welt';
+            $settings['levels'][0]['title'] = $map;
+            $settings['levels'][0]['map'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/' . strtolower($map) . '.svg';
+            $settings['levels'][0]['minimap'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/' . strtolower($map) . '-mini.jpg';
         } catch (Exception $e) {
             watchdog('entity_metadata_wrapper', 'entity_metadata_wrapper error in %error_loc', [
                 '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__
@@ -39,18 +43,18 @@ class EuropeController extends ControllerBase {
             return;
         }
 
+kint($settings);
+
         $nodes = [];
         /**
-          taxonomy landkarten ::
-          Deutschland = 557
-          Europa      = 558
-          Welt        = 559
+          taxonomy landmark anlegen: Deutschland / Europa / Welt
          */
         $query = \Drupal::entityQuery('node');
         $query->condition('type', 'mapplic_landmark')
                 ->condition('status', 1)
-                ->condition('field_mapplic_map_karte.entity:taxonomy_term.name', 'Europa', '=') // Deutschland / Europa / Welt 
+                ->condition('field_mapplic_map_karte.entity:taxonomy_term.name', $map, '=') // Deutschland / Europa / Welt 
                 ->sort('title', 'ASC');
+
         $result = $query->execute();
         if (isset($result) && !empty($result)) {
             $nodes = node_load_multiple($result);
@@ -59,29 +63,29 @@ class EuropeController extends ControllerBase {
             return;
         }
 
-foreach ($nodes as $node) {
+        foreach ($nodes as $node) {
             try {
                 /**
                  * */
-                  
-                  $thumb = NULL; 
-                  $uri = NULL;
-                  $thumb = $node->get('field_thumb_image')->getValue()[0]['target_id'];
-                  if ($thumb != NULL) {
-                  $file = File::load($thumb);
-                  $uri = $file->getFileUri();
-                  }
-                  $thumb_url = NULL;
-                  if ($uri != NULL) {
+                $thumb = NULL;
+                $uri = NULL;
+                if (isset($node->get('field_thumb_image')->getValue()[0]['target_id'])) {
+                    $thumb = $node->get('field_thumb_image')->getValue()[0]['target_id'];
+                }
+                if ($thumb != NULL) {
+                    $file = File::load($thumb);
+                    $uri = $file->getFileUri();
+                }
+                $thumb_url = NULL;
+                if ($uri != NULL) {
                     $thumb_url = ImageStyle::load('mapplic_thumb')->buildUrl($uri); //image_style_url("mapplic_thumb", $thumb['uri']);
-                  }
-                
-                  
+                }
+
                 $description = NULL;
                 $about = NULL;
                 if ($node->__isSet('body')) {
                     $description = $node->get('body')->getValue();
-                    if($description != NULL) {
+                    if ($description != NULL) {
                         $about = strip_tags($description[0]['summary']);
                     }
                     $description = strip_tags($description[0]['value'], '<a><b><p><br><div><img>');
@@ -89,15 +93,15 @@ foreach ($nodes as $node) {
                 /**
                  * optional fields check if:
                  */
-                if(isset($node->get('field_mapplic_map_id')->getValue()[0]['value'])) {
+                $id = "";
+                if (isset($node->get('field_mapplic_map_id')->getValue()[0]['value'])) {
                     $id = $node->get('field_mapplic_map_id')->getValue()[0]['value'];
                 }
-                
-                if(isset($node->get('field_link')->getValue()[0]['uri'])) {
+                $link = Null;
+                if (isset($node->get('field_link')->getValue()[0]['uri'])) {
                     $link = $node->get('field_link')->getValue()[0]['uri'];
                 }
-                
-                
+
                 $settings['levels'][0]['locations'][] = [
                     'id' => $id, 
                     'title' => $node->getTitle(),

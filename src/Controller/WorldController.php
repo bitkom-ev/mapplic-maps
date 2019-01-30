@@ -74,7 +74,6 @@ class WorldController extends ControllerBase {
                     $thumb_url = ImageStyle::load('mapplic_thumb')->buildUrl($uri); //image_style_url("mapplic_thumb", $thumb['uri']);
                 }
 
-
                 $description = NULL;
                 $about = NULL;
                 if ($node->__isSet('body')) {
@@ -88,9 +87,6 @@ class WorldController extends ControllerBase {
                  * optional fields check if:
                  */
                 $id = "";
-                if (isset($node->get('field_mapplic_svg_id')->getValue()[0]['value'])) {
-                    $id = $node->get('field_mapplic_svg_id')->getValue()[0]['value'];
-                }
                 if (isset($node->get('field_mapplic_map_id')->getValue()[0]['value'])) {
                     $id = $node->get('field_mapplic_map_id')->getValue()[0]['value'];
                 }
@@ -100,7 +96,7 @@ class WorldController extends ControllerBase {
                 }
 
                 $settings['levels'][0]['locations'][] = [
-                    'id' => $id, //$wrapper->mapplic_svg_id->value(), $node->get('field_mapplic_svg_id')->getValue()[0]['value']
+                    'id' => $id, 
                     'title' => $node->getTitle(),
                     'description' => $description,
                     'label' => $about,

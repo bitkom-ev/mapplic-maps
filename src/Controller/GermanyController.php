@@ -90,9 +90,6 @@ class GermanyController extends ControllerBase {
                 /**
                  * optional fields check if:
                  */
-                if(isset($node->get('field_mapplic_svg_id')->getValue()[0]['value'])) {
-                    $id = $node->get('field_mapplic_svg_id')->getValue()[0]['value'];
-                }
                 if(isset($node->get('field_mapplic_map_id')->getValue()[0]['value'])) {
                     $id = $node->get('field_mapplic_map_id')->getValue()[0]['value'];
                 }
@@ -103,7 +100,7 @@ class GermanyController extends ControllerBase {
                 
                 
                 $settings['levels'][0]['locations'][] = [
-                    'id' => $id, //$wrapper->mapplic_svg_id->value(), $node->get('field_mapplic_svg_id')->getValue()[0]['value']
+                    'id' => $id, 
                     'title' => $node->getTitle(),
                     'description' => $description,
                     'label' => $about,
