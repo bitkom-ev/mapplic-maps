@@ -1,17 +1,20 @@
-uuid: e6e74d40-916b-4e3b-8111-c23c513e7c24
+uuid: 908d9f77-15af-4ef6-ba83-ee8e69575356
 langcode: de
 status: true
 dependencies:
   module:
+    - dynamic_entity_reference
     - node
     - taxonomy
 id: node.field_mapplic_map_karte
 field_name: field_mapplic_map_karte
 entity_type: node
-type: entity_reference
+type: dynamic_entity_reference
 settings:
-  target_type: taxonomy_term
-module: core
+  exclude_entity_types: false
+  entity_type_ids:
+    taxonomy_term: taxonomy_term
+module: dynamic_entity_reference
 locked: false
 cardinality: 1
 translatable: true
