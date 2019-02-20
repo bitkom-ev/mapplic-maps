@@ -87,6 +87,7 @@
     background-size: 18px 24px;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: transparent;
     font-size: 0;
     width: 18px;
     height: 24px;
@@ -100,9 +101,9 @@
 
 /* New pin types */
 .mapplic-pin.pin-classic {
-    background-color: #f23543;
+    background-color: #07262D; /*c_petrol: #07262D, */
     background-image: none;
-    border-color: #f23543;
+    border-color: #07262D;
     border-radius: 10px;
     line-height: 22px !important;
     width: 20px;
@@ -130,9 +131,9 @@
 }
 
 .mapplic-pin.pin-marker {
-    background-color: #fdca2a;
+    background-color: #007EB4; /* c_cyan_web: #007EB4, */ 
     background-image: none;
-    border-color: #fdca2a;
+    border-color: #FDC400;
     border-radius: 8px;
     width: 16px;
     height: 16px;
@@ -158,9 +159,9 @@
 .mapplic-pin.pin-disk {
     background-color: white !important;
     background-image: none;
-    border-color: #f19819;
+    border-color: #FDC400;
     border-radius: 8px;
-    color: #333 !important;
+    color: #07262D !important;
     width: 16px;
     height: 16px;
     margin-top: -8px;
@@ -182,9 +183,9 @@
 }
 
 .mapplic-pin.pin-ribbon {
-    background-color: #46b450;
+    background-color: #7AB51D;
     background-image: none;
-    border-color: #46b450;
+    border-color: #7AB51D;
     border-radius: 2px 2px 2px 0;
     height: 16px;
     min-width: 10px;
@@ -197,7 +198,7 @@
 .mapplic-pin.pin-ribbon:after {
     border-style: solid;
     border-width: 0 8px 4px 0;
-    border-color: transparent rgba(0, 0, 0, 0.5) transparent transparent;
+    border-color: transparent #b0b0b0 transparent transparent;
     content: '';
     display: block;
     position: absolute;
@@ -222,8 +223,8 @@
 .mapplic-pin.pin-dot {
     background-color: transparent !important;
     background-image: none;
-    border-color: #29afa1;
-    color: #333 !important;
+    border-color: #E52D50;
+    color: #07262D !important;
     height: 16px;
     min-width: 10px;
     width: auto;
@@ -246,15 +247,15 @@
     left: -7px;
 }
 
-.mapplic-pin.orange { background-image: url(images/pin-orange.png); }
-.mapplic-pin.yellow { background-image: url(images/pin-yellow.png); }
-.mapplic-pin.green { background-image: url(images/pin-green.png); }
-.mapplic-pin.blue { background-image: url(images/pin-blue.png); }
-.mapplic-pin.purple { background-image: url(images/pin-purple.png); }
+.mapplic-pin.orange { background-color: transparent !important; background-image: url(images/pin-orange.png); }
+.mapplic-pin.yellow { background-color: transparent !important; background-image: url(images/pin-yellow.png); }
+.mapplic-pin.green { background-color: transparent !important; background-image: url(images/pin-green.png); }
+.mapplic-pin.blue { background-color: transparent !important; background-image: url(images/pin-blue.png); }
+.mapplic-pin.purple { background-color: transparent !important;background-image: url(images/pin-purple.png); }
 
 .mapplic-pin.circular {
     background-image: none;
-    background-color: #fb7575;
+    background-color: #ddd;
     border-radius: 6px;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.1) inset;
     width: 12px;
@@ -265,7 +266,7 @@
 
 .mapplic-pin.circle {
     background: none !important;
-    border: 2px solid #fb7575;
+    border: 2px solid #ddd;
     width: 8px;
     height: 8px;
     margin-left: -6px;
@@ -274,7 +275,7 @@
 
 .mapplic-pin.transparent {
     background-image: none;
-    background-color: #795ecd;
+    background-color: #503287;
     border-radius: 10px;
     width: 20px;
     height: 20px;
@@ -325,7 +326,7 @@
 
 .mapplic-pin.pin-pulse:before {
     content: '';
-    border: 2px solid #888;
+    border: 2px solid #b0b0b0;
     border-radius: 30px;
     height: inherit;
     width: inherit;
@@ -601,7 +602,7 @@ a.mapplic-zoomout-button {
 .mapplic-search-input::-ms-clear {display: none; width:0; height:0;}
 
 .mapplic-search-input:focus {
-    border-color: #6ed8dd;
+    border-color: #E52D50;
 }
 
 .mapplic-search-clear {
@@ -784,7 +785,7 @@ a.mapplic-zoomout-button {
 }
 
 .mapplic-tooltip-title {
-    color: #333;
+    color: #07262D;
     display: inline-block;
     font-size: 18px;
     font-weight: normal;
@@ -824,13 +825,13 @@ a.mapplic-zoomout-button {
 
 .mapplic-tooltip-description,
 .mapplic-tooltip p {
-    color: #aaa;
+    color: #666;
     font-size: 13px;
     line-height: 20px;
 }
 
 .mapplic-popup-link {
-    background-color: #6CB5F4;
+    background-color: #007EB4;
     border-radius: 0;
     color: #fff !important;
     float: right;
@@ -846,7 +847,7 @@ a.mapplic-zoomout-button {
 }
 
 .mapplic-popup-link:hover {
-    background-color: #888;
+    background-color: #b0b0b0;
 }
 
 .mapplic-tooltip img {
@@ -902,7 +903,7 @@ a.mapplic-zoomout-button {
 
 /* Lightbox */
 .mapplic-lightbox-title {
-    color: #333;
+    color: #07262D;
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -1014,7 +1015,7 @@ g.mapplic-clickable > * {
 /* Developer tools */
 .mapplic-coordinates {
     background-color: rgba(255, 255, 255, 0.9);
-    color: #333;
+    color: #07262D;
     position: absolute;
     margin: 10px;
     margin-left: -80px;
@@ -1028,15 +1029,15 @@ g.mapplic-clickable > * {
 /* SKINS */
 /* mapplic-dark */
 .mapplic-dark .mapplic-tooltip {
-    background-color: #333;
+    background-color: #07262D;
 }
 
 .mapplic-dark .mapplic-tooltip-triangle {
-    border-color: #333 transparent transparent transparent !important;
+    border-color: #07262D transparent transparent transparent !important;
 }
 
 .mapplic-dark .mapplic-bottom .mapplic-tooltip-triangle {
-    border-color: transparent transparent #333 transparent !important;
+    border-color: transparent transparent #07262D transparent !important;
 }
 
 .mapplic-dark .mapplic-tooltip-title {
@@ -1087,12 +1088,12 @@ g.mapplic-active > * {
 
 #landmarks-underground polygon.mapplic-active,
 #landmarks-underground path.mapplic-active {
-    fill: #7EE0CD;
+    fill: #E52D50;
 }
 
 #landmarks-level1 polygon.mapplic-active,
 #landmarks-level1 path.mapplic-active {
-    fill: #F9684B;
+    fill: #E52D50;
 }
 
 /* CUSTOM STYLES */
