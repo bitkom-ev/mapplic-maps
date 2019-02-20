@@ -1,0 +1,25 @@
+mapplic_height: 1000
+mapplic_sidebar: true
+mapplic_mapfill: true
+mapplic_zoombuttons: true
+mapplic_clearbutton: true
+mapplic_minimap: true
+mapplic_locations: false
+mapplic_fullscreen: true
+mapplic_hovertip: true
+mapplic_search: true
+mapplic_animate: true
+mapplic_developer_mode: true
+mapplic_zoom: true
+mapplic_max_scale: 10
+mapplic_map_height: 800
+mapplic_map_width: 600
+_core:
+  default_config_hash: sA_ZjRim1DqATcVVv5bzxVZy_Y2idD60ULwIzSO9e60
+langcode: de
+mapplic_map:
+  - '934'
+actions: null
+form_build_id: form-R2TOSNtEGr9E48_H1xBRqUwbEQHb9M7y0S1T9_b-7-4
+form_token: 3mJINGG1Ovq1Z35RWTyzxZv3OQqSTOjHp106xUot9Ds
+form_id: mapplic_admin_settings
