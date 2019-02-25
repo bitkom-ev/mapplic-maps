@@ -577,7 +577,7 @@
 						var ol = $('<ol></ol>').css('border-color', category.color).appendTo(item);
 						if (category.show == 'false') ol.hide();
 						else item.addClass('mapplic-opened');
-						var link = $('<a></a>').attr('href', '#').attr('title', category.title).css('background-color', category.color).text(category.title).prependTo(item);
+						var link = $('<a></a>').attr('href', '#').attr('title', category.title).css('background-color', 'category.color').text(category.title).prependTo(item);
 						link.on('click', function(e) {
 							e.preventDefault();
 							item.toggleClass('mapplic-opened');
@@ -1085,7 +1085,7 @@
 									$('<span><span>' + location.label + '</span></span>').appendTo(pin);
 									//pin.html(location.label);
 								}
-								if (location.fill) pin.css({'background-color': location.fill, 'border-color': location.fill});
+								if (location.fill) pin.css({'background-color': 'transparent', 'border-color': location.fill});
 								pin.attr('data-location', location.id);
 								pin.addClass(location.pin);
 								location.el = pin;
