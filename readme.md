@@ -10,24 +10,42 @@ Mapplic Maps
 
 Description
 ------------
-
 Mapplic Maps integrates the third party Javascript library mapplic from https://www.mapplic.com/
 to drupal 8. This third party library mapplic is not free.
 You must purchase it: https://www.mapplic.com/pricing/ [ in 2019 24 $ ]
 --
 This Module is a fork of: https://www.drupal.org/project/mapplic_maps (which did not work for me)
-This is preset / prepared for German useres mainly.
+This is preset / prepared for German users mainly.
 
+3 Controller are prepared:
+welt
+europa
+deutschland
+
+for other countries or regions copy controller and adopt wording scheme.
+
+I know this could be better solved with variables, but I had no time for this.
 
 Requirements
 ------------
 Modules:
 - dynamic_entity_reference
 
-- taxonomy landmark
-- content typ mapplic maps landmark
+Taxonomy:
+- landmark
+
+Content Typ:
+- mapplic maps landmark
+
+Block:
 - block layout
+
 - permissions
+
+All configurable contents are importable with the yml file
+which have to be moved from mapplic_maps/config/install/ folder
+to your config sync folder
+drush cim to import
 
 
 Features
@@ -51,8 +69,11 @@ landmarks with:
 Installation
 ------------
 
-1. Unpack in the *modules* folder `/modules/contrib/` and enable in `/admin/modules`.
-mapplic block has one dependency: "dynamic_entity_reference"
+1. Unpack in the *modules* folder `/modules/contrib/`
+  1.1 remove files from:   /mapplic_maps/config/install andcopy to your /config/sync folder
+  1.2 and enable in `/admin/modules`
+
+#mapplic block has one dependency: "dynamic_entity_reference"
 
 2. Purchase! the mapplic jQuery here: https://www.mapplic.com/ and download ZIP file.
 Extract the ZIP-File: 'codecanyon-6275001-mapplic-custom-interactive-map-jquery-plugin.zip' (or similar) 
@@ -67,8 +88,7 @@ to subdir of the mapplic_maps module:  /modules/contrib/mapplic_maps/libraries/m
 
   2.2 Do the same with the maps: germany.svg germany-mini.svg etc.
 
-3. In order to see data on any map you must install:
-    you will need:
+3. In order to see data on any map you must import the config/sync files
 
   3.1 contenty typ: 'mapplic_landmark' with all fields
 
