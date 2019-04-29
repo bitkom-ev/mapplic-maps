@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Contains \Drupal\mapplic_maps\Plugin\Block\MapplicMapsGermany.
@@ -7,6 +6,7 @@
 namespace Drupal\mapplic_maps\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Url;
+use Drupal\Core\DrupalSettings;
 
 /**
  * Provides a 'mapplic_maps' block.
@@ -18,11 +18,11 @@ use Drupal\Core\Url;
  * )
  */
 class MapplicMapsGermany extends BlockBase {
-
     /**
      * {@inheritdoc}
      */
     public function build() {
+        global $base_url;
         $config = \Drupal::config('mapplic_maps.settings');
 
         //to generate: maps/data/germany.json
@@ -31,13 +31,14 @@ class MapplicMapsGermany extends BlockBase {
         $mapplicMapsSettings = [
             'mapplic_maps' => [
                 'action' => 'tooltip',
-                'source' => 'maps/data/germany.json',
+                'source' => $base_url . "/maps/data/germany.json",
                 'animate' => $config->get('mapplic_animate'),
                 'alphabetic' => false,
                 'clearbutton' => true,
                 'developer' => $config->get('mapplic_developer_mode'),
                 'deeplinking' => true,
                 'height' => $config->get('mapplic_map_height'),
+                'width' => $config->get('mapplic_map_width'),
                 'hovertip' => $config->get('mapplic_hovertip'),
                 'fillcolor' => '#ff0000',
                 'fullscreen' => $config->get('mapplic_fullscreen'),
@@ -54,7 +55,6 @@ class MapplicMapsGermany extends BlockBase {
                 'search' => $config->get('mapplic_search'),
                 'sidebar' => $config->get('mapplic_sidebar'),
                 'smartip' => true,
-                'width' => $config->get('mapplic_map_width'),
                 #'thumbholder' => true,
                 'zoombuttons' => $config->get('mapplic_zoombuttons'),
                 'zoomoutclose' => true,

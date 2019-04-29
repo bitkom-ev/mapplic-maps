@@ -25,6 +25,7 @@ class MapplicMapsEurope extends BlockBase {
      * {@inheritdoc}
      */
     public function build() {
+        global $base_url;
         $config = \Drupal::config('mapplic_maps.settings');
         
            //to generate: maps/data/europe.json
@@ -32,8 +33,8 @@ class MapplicMapsEurope extends BlockBase {
         
         $mapplicMapsSettings = [
             'mapplic_maps' => [
-                'source' => '/maps/data/europe.json',
                 'action' => 'tooltip',
+                'source' => $base_url . "/maps/data/europe.json",
                 'animate' => $config->get('mapplic_animate'),
                 'alphabetic' => false,
                 'clearbutton' => true,

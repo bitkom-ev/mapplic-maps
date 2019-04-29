@@ -34,7 +34,7 @@ class MapplicMapsMap extends BlockBase {
             'mapplic_maps' => [
                 'action' => 'tooltip',
                 //  path: /maps/data/{map}.json/{map_width}/{map_height}
-                'source' => 'maps/data/1200/760/welt.json', // maps/data/world.json
+                'source' => 'maps/data/1200/760/mapplic.json', // maps/data/world.json
                 'height' => '760', // $config->get('mapplic_map_height')
                 'width' => '1200', // $config->get('mapplic_map_width'),
                 
