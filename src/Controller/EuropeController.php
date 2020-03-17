@@ -20,8 +20,8 @@ class EuropeController extends ControllerBase {
     public function _mapplic_maps_europe_json() {
 
         $settings = [
-            'mapwidth' => "600",
-            'mapheight' => "800",
+            'mapwidth' => "1200", // 1200 760
+            'mapheight' => "1200",
             'categories' => ['state'],
             'levels' => [],
         ];
@@ -41,10 +41,7 @@ class EuropeController extends ControllerBase {
 
         $nodes = [];
         /**
-          taxonomy landkarten ::
-          Deutschland = 557
-          Europa      = 558
-          Welt        = 559
+          taxonomy landmark anlegen: Deutschland / Europa / Welt
          */
         $query = \Drupal::entityQuery('node');
         $query->condition('type', 'mapplic_landmark')
@@ -59,45 +56,45 @@ class EuropeController extends ControllerBase {
             return;
         }
 
-foreach ($nodes as $node) {
+        foreach ($nodes as $node) {
             try {
                 /**
                  * */
-                  
-                  $thumb = NULL; 
-                  $uri = NULL;
-                  $thumb = $node->get('field_thumb_image')->getValue()[0]['target_id'];
-                  if ($thumb != NULL) {
-                  $file = File::load($thumb);
-                  $uri = $file->getFileUri();
-                  }
-                  $thumb_url = NULL;
-                  if ($uri != NULL) {
+                $thumb = NULL;
+                $uri = NULL;
+                if (isset($node->get('field_thumb_image')->getValue()[0]['target_id'])) {
+                    $thumb = $node->get('field_thumb_image')->getValue()[0]['target_id'];
+                }
+                if ($thumb != NULL) {
+                    $file = File::load($thumb);
+                    $uri = $file->getFileUri();
+                }
+                $thumb_url = NULL;
+                if ($uri != NULL) {
                     $thumb_url = ImageStyle::load('mapplic_thumb')->buildUrl($uri); //image_style_url("mapplic_thumb", $thumb['uri']);
-                  }
-                
-                  
+                }
+
                 $description = NULL;
                 $about = NULL;
                 if ($node->__isSet('body')) {
                     $description = $node->get('body')->getValue();
-                    if($description != NULL) {
+                    if ($description != NULL) {
                         $about = strip_tags($description[0]['summary']);
+                        $description = strip_tags($description[0]['value'], '<a><b><p><br><div><img>');
                     }
-                    $description = strip_tags($description[0]['value'], '<a><b><p><br><div><img>');
                 }
                 /**
                  * optional fields check if:
                  */
-                if(isset($node->get('field_mapplic_map_id')->getValue()[0]['value'])) {
+                $id = "";
+                if (isset($node->get('field_mapplic_map_id')->getValue()[0]['value'])) {
                     $id = $node->get('field_mapplic_map_id')->getValue()[0]['value'];
                 }
-                
-                if(isset($node->get('field_link')->getValue()[0]['uri'])) {
+                $link = Null;
+                if (isset($node->get('field_link')->getValue()[0]['uri'])) {
                     $link = $node->get('field_link')->getValue()[0]['uri'];
                 }
-                
-                
+
                 $settings['levels'][0]['locations'][] = [
                     'id' => $id, 
                     'title' => $node->getTitle(),

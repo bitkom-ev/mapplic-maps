@@ -27,10 +27,11 @@ class MapplicMapsEurope extends BlockBase {
     public function build() {
         global $base_url;
         $config = \Drupal::config('mapplic_maps.settings');
-        
+
            //to generate: maps/data/europe.json
         $source = Url::fromRoute("maps_europe_json.json", [], ['absolute' => TRUE]);
-        
+      dump($base_url);
+
         $mapplicMapsSettings = [
             'mapplic_maps' => [
                 'action' => 'tooltip',
@@ -40,12 +41,12 @@ class MapplicMapsEurope extends BlockBase {
                 'clearbutton' => true,
                 'developer' => $config->get('mapplic_developer_mode'),
                 'deeplinking' => true,
-                'height' => $config->get('mapplic_map_height'),
-                'hovertip' => $config->get('mapplic_hovertip'),
-                'fillcolor' => 'ff0000',
-                'fullscreen' => $config->get('mapplic_fullscreen'),
+                'height' => '1200', // $config->get('mapplic_map_height'),
+                'width' => '1200', // $config->get('mapplic_map_width'),
                 'hovertip' => true,
-                'landmark' => false,
+                'fillcolor' => '#ff0000',
+                'fullscreen' => $config->get('mapplic_fullscreen'),
+                'landmark' => true,
                 'lightbox' => false,
                 'locations' => $config->get('mapplic_locations'),
                 'mapfill' => $config->get('mapplic_mapfill'),
@@ -57,13 +58,13 @@ class MapplicMapsEurope extends BlockBase {
                 'search' => $config->get('mapplic_search'),
                 'sidebar' => $config->get('mapplic_sidebar'),
                 'smartip' => true,
-                'width' => $config->get('mapplic_map_width'),
-                'thumbholder' => true,
+                #'thumbholder' => true,
                 'zoombuttons' => $config->get('mapplic_zoombuttons'),
                 'zoomoutclose' => true,
                 'zoom' => $config->get('mapplic_zoom'),
             ],
         ];
+        //kint($mapplicMapsSettings);
 
         return [
             '#type' => 'markup',
