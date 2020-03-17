@@ -81,8 +81,8 @@ class GermanyController extends ControllerBase {
                     $description = $node->get('body')->getValue();
                     if ($description != NULL) {
                         $about = strip_tags($description[0]['summary']);
+                        $description = strip_tags($description[0]['value'], '<a><b><p><br><div><img>');
                     }
-                    $description = strip_tags($description[0]['value'], '<a><b><p><br><div><img>');
                 }
                 /**
                  * optional fields check if:
