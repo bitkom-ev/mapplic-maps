@@ -790,12 +790,13 @@ a.mapplic-zoomout-button {
   max-height: 300px;
 }
 /* Tooltip Europe */
+#block-mapplicmapsbundeslaenderblock  .mapplic-tooltip,
 #block-mapplicmapseuropeblock .mapplic-tooltip {
   max-width: 600px;
 }
-
+#block-mapplicmapsbundeslaenderblock .mapplic-tooltip-content,
 #block-mapplicmapseuropeblock .mapplic-tooltip-content {
-  width: 100%;
+  max-width: 100%;
   max-height: 300px;
 }
 

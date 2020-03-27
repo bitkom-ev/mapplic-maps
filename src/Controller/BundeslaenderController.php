@@ -28,7 +28,7 @@ class BundeslaenderController extends ControllerBase {
         try {
             $config = \Drupal::config('mapplic_maps.settings');
             $settings['levels'][0]['id'] = 'mapplic-bundeslaender';
-            $settings['levels'][0]['title'] = 'Bundeslaender';
+            $settings['levels'][0]['title'] = 'Deutsche Bundesländer';
             $settings['levels'][0]['map'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/bundeslaender.svg';
             $settings['levels'][0]['minimap'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/bundeslaender-mini.jpg';
         } catch (Exception $e) {
@@ -40,7 +40,7 @@ class BundeslaenderController extends ControllerBase {
 
         $nodes = [];
         /**
-          taxonomy landmark anlegen: Deutschland / Europa / Welt
+          taxonomy landmark anlegen: Bundeslaender / Deutschland / Europa / Welt
          */
         $query = \Drupal::entityQuery('node');
         $query->condition('type', 'mapplic_landmark')
@@ -54,6 +54,8 @@ class BundeslaenderController extends ControllerBase {
             $nodes = node_load_multiple($result);
         }
         if (empty($nodes)) {
+          // Logs an error
+          \Drupal::logger('mapplic_maps')->error("Nodes mapplic_landmark and Taxonomy Bundeslaender are still empty: " . $nodes);
             return;
         }
 
