@@ -50,7 +50,7 @@ drush cim to import
 
 Features
 ------------
-Provides three Blocks with three maps: Germany, europe & World
+Provides three Blocks with four  maps: Bundeslaender, Germany, europe & World
 Makes use of one content type: landmark to edit & place
 landmarks with:
 

@@ -5,7 +5,7 @@ mapplic_maps.admin_settings:
     _form: \Drupal\mapplic_maps\Form\MapplicMapsAdminSettings
   requirements:
     _permission: 'administer mapplic maps'
-    
+
 mapplic_maps_map.json:
   path: /maps/data/{map_width}/{map_height}/{map}
   defaults:
@@ -16,13 +16,20 @@ mapplic_maps_map.json:
     map_height: '760'
   requirements:
     _permission: 'access content'
-   
-    
+
 mapplic_maps.json:
   path: /maps/data/deutschland.json
   defaults:
     _controller: '\Drupal\mapplic_maps\Controller\DefaultController::_mapplic_maps_json'
     _title: 'Deutschland json for mapplic_maps'
+  requirements:
+    _permission: 'access content'
+
+mapplic_maps_bundeslaender.json:
+  path: /maps/data/bundeslaender.json
+  defaults:
+    _controller: '\Drupal\mapplic_maps\Controller\BundeslaenderController::_mapplic_maps_bundeslaender_json'
+    _title: 'German Bundeslaender json for mapplic_maps'
   requirements:
     _permission: 'access content'
 
@@ -49,9 +56,6 @@ mapplic_maps_world.json:
     _title: 'World json for mapplic_maps'
   requirements:
     _permission: 'access content'
-
-
-
 
 mapplic_maps.svg:
   path: '/maps/germany.svg'
