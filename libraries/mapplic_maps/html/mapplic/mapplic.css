@@ -131,7 +131,7 @@
 }
 
 .mapplic-pin.pin-marker {
-    background-color: #007EB4; /* c_cyan_web: #007EB4, */ 
+    background-color: #007EB4; /* c_cyan_web: #007EB4, */
     background-image: none;
     border-color: #FDC400;
     border-radius: 8px;
@@ -418,7 +418,7 @@
 .mapplic-container > .mapplic-button {
     position: absolute;
     margin: 10px;
-} 
+}
 
 .mapplic-button:active {
     background-color: #f8f8f8;
@@ -783,6 +783,21 @@ a.mapplic-zoomout-button {
     -moz-transition: margin 0.1s;
     transition: margin 0.1s;
 }
+.mapplic-tooltip-content {
+  max-height: 160px;
+  width: 100%;
+  width: 700px;
+  max-height: 300px;
+}
+/* Tooltip Europe */
+#block-mapplicmapseuropeblock .mapplic-tooltip {
+  max-width: 600px;
+}
+
+#block-mapplicmapseuropeblock .mapplic-tooltip-content {
+  width: 100%;
+  max-height: 300px;
+}
 
 .mapplic-tooltip-title {
     color: #07262D;
@@ -1120,7 +1135,7 @@ g.mapplic-active > * {
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 30px 30px;
-    background-position: left top; 
+    background-position: left top;
     border: 0;
     width: 30px;
     height: 30px;
