@@ -30,7 +30,7 @@ class MapplicMapsEurope extends BlockBase {
 
            //to generate: maps/data/europe.json
         $source = Url::fromRoute("maps_europe_json.json", [], ['absolute' => TRUE]);
-      dump($base_url);
+      //dump($base_url);
 
         $mapplicMapsSettings = [
             'mapplic_maps' => [
