@@ -62,7 +62,7 @@ class MapplicMaps extends BlockBase {
         ];
 
         return [
-            '#theme' => 'smartschool',
+            '#theme' => '',
             '#type' => 'markup',
             '#markup' => '<div id="mapplic_maps"></div>',
             '#attached' => [

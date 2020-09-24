@@ -83,7 +83,7 @@ class BundeslaenderController extends ControllerBase {
                     $description = $node->get('body')->getValue();
                     if ($description != NULL) {
                         $about = strip_tags($description[0]['summary']);
-                        $description = strip_tags($description[0]['value'], '<a><b><p><br><div><img>');
+                        $description = strip_tags($description[0]['value'], '<ul><ol><li><a><b><p><br><div><img>');
                     }
                 }
                 /**

@@ -45,7 +45,7 @@ class GermanyController extends ControllerBase {
         $query = \Drupal::entityQuery('node');
         $query->condition('type', 'mapplic_landmark')
                 ->condition('status', 1)
-                ->condition('field_mapplic_map_karte.entity:taxonomy_term.name', 'Deutschland', '=') // Deutschland / Europa / Welt 
+                ->condition('field_mapplic_map_karte.entity:taxonomy_term.name', 'Deutschland', '=') // Deutschland / Europa / Welt
                 ->sort('title', 'ASC');
 
         $result = $query->execute();
@@ -81,7 +81,7 @@ class GermanyController extends ControllerBase {
                     $description = $node->get('body')->getValue();
                     if ($description != NULL) {
                         $about = strip_tags($description[0]['summary']);
-                        $description = strip_tags($description[0]['value'], '<a><b><p><br><div><img>');
+                        $description = strip_tags($description[0]['value'], '<ul><ol><li><a><b><p><br><div><img>');
                     }
                 }
                 /**
@@ -97,7 +97,7 @@ class GermanyController extends ControllerBase {
                 }
 
                 $settings['levels'][0]['locations'][] = [
-                    'id' => $id, 
+                    'id' => $id,
                     'title' => $node->getTitle(),
                     'description' => $description,
                     'label' => $about,

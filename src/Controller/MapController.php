@@ -20,10 +20,10 @@ use Symfony\Component\HttpFoundation\Request;
 class MapController extends ControllerBase {
 
     public function _mapplic_maps_map_json(Request $map_width, Request $map_height, Request $map) {
-        
+
         kint(explode($map, '.'));
         $map_name[0] = explode($map, '.');
-        
+
         $settings = [
             'mapwidth' => $map_width, // 1200 760
             'mapheight' => $map_height,
@@ -52,7 +52,7 @@ kint($settings);
         $query = \Drupal::entityQuery('node');
         $query->condition('type', 'mapplic_landmark')
                 ->condition('status', 1)
-                ->condition('field_mapplic_map_karte.entity:taxonomy_term.name', $map, '=') // Deutschland / Europa / Welt 
+                ->condition('field_mapplic_map_karte.entity:taxonomy_term.name', $map, '=') // Deutschland / Europa / Welt
                 ->sort('title', 'ASC');
 
         $result = $query->execute();
@@ -88,7 +88,7 @@ kint($settings);
                     if ($description != NULL) {
                         $about = strip_tags($description[0]['summary']);
                     }
-                    $description = strip_tags($description[0]['value'], '<a><b><p><br><div><img>');
+                    $description = strip_tags($description[0]['value'], '<ul><ol><li><a><b><p><br><div><img>');
                 }
                 /**
                  * optional fields check if:
@@ -103,7 +103,7 @@ kint($settings);
                 }
 
                 $settings['levels'][0]['locations'][] = [
-                    'id' => $id, 
+                    'id' => $id,
                     'title' => $node->getTitle(),
                     'description' => $description,
                     'label' => $about,
