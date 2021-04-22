@@ -30,7 +30,7 @@ class LaenderStartupsSaeuleController extends ControllerBase {
     try {
       $config = \Drupal::config('mapplic_maps.settings');
       $settings['levels'][0]['id'] = 'mapplic-bundeslaender-saeule';
-      $settings['levels'][0]['title'] = 'Deutsche Bundesländer für Startups Säiúle';
+      $settings['levels'][0]['title'] = 'Deutsche Bundesländer für Startups Säule';
       $settings['levels'][0]['map'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/bundeslaender.svg';
       $settings['levels'][0]['minimap'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/bundeslaender-mini.jpg';
     } catch (Exception $e) {

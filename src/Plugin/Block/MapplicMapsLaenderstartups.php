@@ -14,7 +14,7 @@ use Drupal\Core\Url;
  * Provides a 'mapplic_maps' block.
  *
  * @Block(
- *   id = "mapplic_maps_bundeslaender_block",
+ *   id = "mapplic_maps_laenderstartups_block",
  *   admin_label = @Translation("Mapplic Maps Laender Startups block"),
  *   category = @Translation("Mapplic Maps Laender Startups block")
  * )
@@ -29,7 +29,7 @@ class MapplicMapsLaenderstartups extends BlockBase {
     $config = \Drupal::config('mapplic_maps.settings');
 
     //to generate: /maps/data/laenderstartups
-    //$source = Url::fromRoute("mapplic_maps_laenderstartups.json");
+    $source = Url::fromRoute("mapplic_maps_laenderstartups.json");
 
     $mapplicMapsSettings = [
       'mapplic_maps' => [

@@ -33,6 +33,30 @@ mapplic_maps_bundeslaender.json:
   requirements:
     _permission: 'access content'
 
+mapplic_maps_startupland.json:
+  path: /maps/data/startupland.json
+  defaults:
+    _controller: '\Drupal\mapplic_maps\Controller\StartuplandController::_mapplic_maps_startupland_json'
+    _title: 'Startupland json for mapplic_maps'
+  requirements:
+    _permission: 'access content'
+
+mapplic_maps_laenderstartups.json:
+  path: /maps/data/laenderstartups.json
+  defaults:
+    _controller: '\Drupal\mapplic_maps\Controller\LaenderstartupsController::_mapplic_maps_laenderstartups_json'
+    _title: 'Startup Bundeslaender json for mapplic_maps'
+  requirements:
+    _permission: 'access content'
+
+mapplic_maps_laenderstartupssaeule.json:
+  path: /maps/data/laenderstartupssaeule.json
+  defaults:
+    _controller: '\Drupal\mapplic_maps\Controller\LaenderStartupsSaeuleController::_mapplic_maps_laenderstartupssaeule_json'
+    _title: 'Startup Säule Bundeslaender json for mapplic_maps'
+  requirements:
+    _permission: 'access content'
+
 mapplic_maps_germany.json:
   path: /maps/data/germany.json
   defaults:
