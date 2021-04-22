@@ -418,7 +418,7 @@
         if (typeof window.URL !== 'undefined') {
           url = new URL(window.location.href);
           url.searchParams.set(this.param, id);
-          url = url.href
+          url = url.href;
         } else {
           url = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + this.param + '=' + id;
         }
