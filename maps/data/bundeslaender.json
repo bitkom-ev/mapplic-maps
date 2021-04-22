@@ -1,1 +1,225 @@
-{"mapwidth":"600","mapheight":"800","categories":["Bundeslaender"],"levels":[{"id":"mapplic-bundeslaender","title":"Deutsche Bundesl\u00e4nder","map":"\/modules\/contrib\/mapplic_maps\/libraries\/mapplic_maps\/html\/maps\/bundeslaender.svg","minimap":"\/modules\/contrib\/mapplic_maps\/libraries\/mapplic_maps\/html\/maps\/bundeslaender-mini.jpg","locations":[{"id":"de-bw","title":"Baden-W\u00fcrttemberg","description":"\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cp\u003EZur Unterst\u00fctzung von Lehrer\u0026nbsp;in Zeiten von digitalem Unterricht auf Distanz ver\u00f6ffentlicht das Kultusministerium eine Liste mit freien, digitalen Bildungsangeboten, welche von Sch\u00fcler\u0026nbsp;und Lehrer\u0026nbsp;abgerufen werden kann. Dar\u00fcber hinaus bietet das Landesmedienzentrum \u201eDigitale Sprechstunden\u201c an. Der Landesbildungsserver Baden-W\u00fcrttemberg stellt auf Wunsch ebenfalls Kurse f\u00fcr die E-Learning Plattform Moodle f\u00fcr Lehrpersonal zur Verf\u00fcgung. Das Land hat allen Schulen die M\u00f6glichkeit er\u00f6ffnet, dieses kostenlos zu nutzen. Um einen verl\u00e4sslichen Betrieb des Lern-Management-Systems gew\u00e4hrleisten zu k\u00f6nnen, wurden dar\u00fcber hinaus zus\u00e4tzliche Serverleistung und Speicherkapazit\u00e4t gekauft.\u003C\/p\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.36","y":"0.79"},{"id":"de-by","title":"Bayern","description":"\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cp\u003EUm digitalen Unterricht stattfinden zu lassen, hat das Bayerische Kultusministerium in Zusammenarbeit mit dem Staatsinstitut f\u00fcr Bildungsforschung (ISB) Kurzclips sowie andere digitale Kommunikations- und Lernmittel f\u00fcr die Onlineplattform mebis bereitgestellt.\u0026nbsp; F\u00fcr Sch\u00fcler, die mebis bisher noch nicht genutzt haben, wurden Videotutorials f\u00fcr die Einweisung zur\u0026nbsp;Nutzung der Plattform erstellt. Der Bayerische Rundfunk stellt au\u00dferdem gemeinsam mit dem Kultusministerium ein besonderes Angebot zum Lernen von zu Hause bereit, das sich \u201eSchule daheim\u201c nennt und \u00fcber ARD-alpha sowie in der BR Mediathek t\u00e4glich von 9-12 Uhr abrufbar ist. Begleitendes Lernmaterial wird \u00fcber die Online-Plattform mebis zur Verf\u00fcgung gestellt.\u003C\/p\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.64","y":"0.75"},{"id":"de-be","title":"Berlin","description":"\u003Cp\u003EDas Land Berlin hat mit dem \u201eLernraum Berlin\u201c ein Lernmanagementsystem, das allen \u00f6ffentlichen Berliner Schulen zur Verf\u00fcgung steht. Dieses unterst\u00fctzt interaktives Lernen und die Nutzung digitaler Medien. Der Lernraum Berlin umfasst Kommunikationsmittel, wie Messenger-Dienste, E-Mail-Verteiler und Face-to-Face-Online-Dienste und bietet M\u00f6glichkeiten zur Verbreitung von Unterrichtsmaterial und Lernempfehlungen. Auf diese Weise soll ein Unterricht ohne Pr\u00e4senz in der Schule m\u00f6glich gemacht werden.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.8","y":"0.32"},{"id":"de-bb","title":"Brandenburg","description":"\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cp\u003EBrandenburgs Schulen sind zum\u0026nbsp;Teil\u0026nbsp;auf einen digitalen Fernunterricht vorbereitet. 51 Schulen in der Region nehmen am Pilotprojekt \u201eSchulcloud Brandenburg\u201c teil. \u00dcber die Schulcloud werden Bildungsinhalte webbasiert von \u00fcberall abrufbar. Das Bildungs-ministerium hat kurzfristig die Online-Plattform \u201eweBBcloud\u201c aufgesetzt, auf der Schulen Informationen f\u00fcr Sch\u00fcler\u0026nbsp;und Eltern hochladen k\u00f6nnen. Fachbezogene Lernaufgaben sowie weitere Materialien k\u00f6nnen von Lehrern\u0026nbsp;\u00fcber das Online-Portal des Instituts f\u00fcr Schulqualit\u00e4t der L\u00e4nder Berlin und Brandenburg\u0026nbsp;abgerufen werden. Zudem verweist das Bildungsministerium auf den Gratis Zugang zur interaktiven Schulmediathek Educ\u2019ARTE von ARTE Education als zus\u00e4tzliches Lernangebot.\u003C\/p\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.85","y":"0.4"},{"id":"de-hb","title":"Bremen","description":"\u003Cp\u003EDie Hansestadt Bremen kann w\u00e4hrend der Phase der Schulschlie\u00dfung auf landesweit bestehende Angebote f\u00fcr digitalen Unterricht auf Distanz zur\u00fcckgreifen. Dazu z\u00e4hlen die Lernplattform itslearning sowie Online Medienangebote f\u00fcr den Unterricht des Zentrums f\u00fcr Medien.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.32","y":"0.25"},{"id":"de-hh","title":"Hamburg","description":"\u003Cp\u003EDer Stadtstaat Hamburg hat beschlossen, in Zeiten von Corona den regul\u00e4ren Schulbetrieb ruhen zu lassen. Die Lehrkr\u00e4fte sind angehalten Lernangebote zu organisieren und diese u.a. \u00fcber digitale Kan\u00e4le an ihre Sch\u00fcler zu kommunizieren. Seit 2018 hat Hamburg das digital.learning.lab, eine Online-Plattform, mit der Lehrkr\u00e4fte bei der Entwicklung digitaler Unterrichtseinheiten unterst\u00fctzt werden. Dar\u00fcber hinaus haben alle Stadtteilschulen und Gymnasium kostenlosen Zugriff auf die web-basierten Lernprogramme \u201eBettermarks\u201c und \u201ekapiert.de\u201c.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.45","y":"0.19"},{"id":"de-he","title":"Hessen","description":"\u003Cp\u003EHessen begegnet den Schulschlie\u00dfungen mit Anregungen zum digitalen Lernen. Ein Gro\u00dfteil der Schulen soll damit begonnen haben, digitalen Fernunterricht einzusetzen. Konkret verweisen die Anregungen des Kultusministeriums auf Lernplattformen wie das kostenlose hessische Schulportal, wtkedu, Moodle oder \u00e4hnliche Angebote. Auf dem hessischen Bildungsserver werden dar\u00fcber hinaus Lernmaterialien und \u2013angebote zur Unterst\u00fctzung beim digitalen Lernen aufgef\u00fchrt, die f\u00fcr Lehrkr\u00e4fte frei zug\u00e4nglich sind. F\u00fcr Lehrer mit Zugang zum hessischen Schulportal besteht dar\u00fcber hinaus die M\u00f6glichkeit, digitale Materialien aus dem edupool der hessischen Medienzentren abzurufen und zu verwenden.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.34","y":"0.55"},{"id":"de-mv","title":"Mecklenburg-Vorpommern","description":"\u003Cp\u003EDas Bildungsministerium in Mecklenburg-Vorpommern stellt allen Schulen kostenlose Zug\u00e4nge zur Unterrichtsplattform Fuxmedia zur Verf\u00fcgung, um in Zeiten von Schulschlie\u00dfungen, den Unterricht im digitalen Raum weiter durchf\u00fchren zu k\u00f6nnen. Mithilfe der Plattform k\u00f6nnen Lehrer*innen Unterrichtseinheiten organisieren sowie Lerninhalte und Anleitungen f\u00fcr ihre Schulklassen anlegen, die von den Sch\u00fcler*innen digital abgerufen werden k\u00f6nnen. Weitere Angebote des interaktiven Lernens und der Bereitstellung von Lerninhalten sind in Vorbereitung. Vorab wurden Hinweise zu Online-Lehrinhalten an die Lehrkr\u00e4fte im Land verschickt und auf den Deutschen Bildungsserver verwiesen, \u00fcber den Lehrer*innen sich informieren k\u00f6nnen.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.71","y":"0.16"},{"id":"de-ni","title":"Niedersachsen","description":"\u003Cp\u003EIn Zeiten von Schulschlie\u00dfungen aufgrund von Corona wurde vom Nieders\u00e4chsischen Kultusministerium beschlossen, dass der Unterrichtsbetrieb in Schulen und anderen \u00f6ffentlichen Institutionen nicht mehr stattfinden und ersatzlos ausfallen wird. Nichtsdestotrotz verf\u00fcgt das Land \u00fcber den Bildungsserver NiBis, der Schulen sowohl eine E-Learning-Plattform als auch Informationen und Materialien bietet.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.4","y":"0.28"},{"id":"de-nw","title":"Nordrhein-Westfalen","description":"\u003Cp\u003EDie Medienberatung NRW stellt im Auftrag des Ministeriums f\u00fcr Schule und Bildung mit der \u201elearn:line\u201c online Lehrmaterialien zur Verf\u00fcgung, die zur Vorbereitung und Durchf\u00fchrung von Fernunterricht genutzt werden k\u00f6nnen. Dar\u00fcber hinaus findet sich auf dem Deutschen Bildungsserver ein weitreichendes Angebot digitaler Lehrmittel. Das Land pr\u00fcft derzeit die Bereitstellung zentraler Plattformen. Eine Sammlung von Unterst\u00fctzungsangeboten f\u00fcr Lehrer in Zeiten des Distanzlernens wurde bereits erarbeitet und wird stetig auf der Webseite aktualisiert. Auch der WDR hat ein Lern- und Bildungsangebot entwickelt, das t\u00e4glich im WDR Fernsehen ausgestrahlt wird.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.19","y":"0.45"},{"id":"de-rp","title":"Rheinland-Pfalz","description":"\u003Cp\u003ELehrkr\u00e4fte in Rheinland-Pfalz sind dazu angehalten, den Unterricht alters- und schulartspezifisch zu organisieren. Daf\u00fcr k\u00f6nnen sie auf analoge Formen zur\u00fcckgreifen oder digitale Unterst\u00fctzungsangebote nutzen. Hierf\u00fcr empfiehlt das Kultusministerium, die Nutzung des modularen Netzes f\u00fcr Schulen (MNS+) sowie der digitalen Lernplattform Moodle, die derzeit von ca. 470 Schulen im Land genutzt wird.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.16","y":"0.65"},{"id":"de-sl","title":"Saarland","description":[],"label":null,"pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.1","y":"0.72"},{"id":"de-sn","title":"Sachsen","description":"\u003Cp\u003EUm digitales Lernen vom heimischen Schreibtisch aus zu erm\u00f6glichen, stellt das Kultusministerium in Sachsen die Lern- und Kommunikationsplattform LernSax als digitales Werkzeug f\u00fcr das Lernen au\u00dferhalb des Klassenzimmers zur Verf\u00fcgung. Die Schulen werden in der Umstellung auf den ausschlie\u00dflich digitalen Unterricht mit Online Informationsangeboten, Handreichungen zu verschiedenen digitalen Werkzeugen sowie Webinaren unterst\u00fctzt. LernSax und die Dienste des S\u00e4chsischen Bildungsservers dienen als zentrale Anlaufstellen f\u00fcr die Gestaltung des Unterrichts und die Einbindung von Online-Tools.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.79","y":"0.51"},{"id":"de-st","title":"Sachsen-Anhalt","description":"\u003Cp\u003EIn Sachsen-Anhalt k\u00f6nnen Lehrer und Sch\u00fcler in Zeiten der Schulschlie\u00dfung auf verschiedene Online-Tools und L\u00f6sungen zur\u00fcckgreifen. Die Lernplattform Moodle wird als zentrale Plattform des Landes genutzt und erm\u00f6glicht es, digitale Lehr- und Lernmethoden in den Unterricht einzubinden. Auf Moodle ist dar\u00fcber hinaus die Lern\u2014und \u00dcbungsplattform 2l4s (2learn4students) integriert. Zus\u00e4tzlich haben Lehrkr\u00e4fte Zugriff auf emuCLOUD, die Bildungscloud des Landes. Auch der Zugriff auf lizenzrechtlich abgesicherte und einfach einsetzbare didaktische Unterrichtsmedien wird \u00fcber das Medienportal des Landes, emuTube, erm\u00f6glicht.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.62","y":"0.39"},{"id":"de-sh","title":"Schleswig-Holstein","description":"\u003Cp\u003EEinige Schulen in Schleswig-Holstein setzen digitalen Unterricht bereits ein. Mit SchulCommSy, IServ oder anderen webbasierten Lernplattformen (Moodle, LogoDidakt) werden entsprechende Voraussetzungen f\u00fcr den digitalen Fernunterricht geboten. Zudem werden Schulen dazu aufgerufen, Aufgaben \u00fcber die jeweiligen Schulhomepages oder E-Mail-Verteiler zug\u00e4nglich zu machen. Lehrkr\u00e4fte k\u00f6nnen das Angebot der Mediathek des Instituts f\u00fcr Qualit\u00e4tsentwicklung an Schulen Schleswig-Holstein (IQSH) nutzen. Dar\u00fcber hinaus stellt das Bildungsministerium t\u00e4glich unter dem Hashtag #wirlernen auf Instagram und Twitter Links und Bildungsangebote vor, die Sch\u00fclern in Zeiten von Schulschlie\u00dfungen einen Mehrwert bieten.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.44","y":"0.1"},{"id":"de-th","title":"Th\u00fcringen","description":"\u003Cp\u003EDie technischen Voraussetzungen f\u00fcr digitalen Fernunterricht sind in Th\u00fcringen bisher noch nicht fl\u00e4chendeckend etabliert. Derzeit wird an insgesamt 25 digitalen Pilotschulen eine Schulcloud getestet, die f\u00fcr Zwecke des digitalen Unterrichts zum Einsatz kommen soll. Allerdings befindet sich diese noch in der Erprobung. Um dennoch das Lernen auf Distanz zu erm\u00f6glichen, sind Lehrkr\u00e4fte dazu angehalten, Unterrichtsmaterialien und Aufgabenstellungen zu erarbeiten, die ggf. auch auf traditionellen und etablierten Kommunikationswegen an die Sch\u00fcler*innen verschickt werden.\u003C\/p\u003E\r\n","label":"","pin":"blue","fill":"#009FE3","thumbnail":null,"link":null,"zoom":"1","x":"0.55","y":"0.53"}]}]}
+{
+  "mapwidth": "600",
+  "mapheight": "800",
+  "categories": [
+    "Bundeslaender"
+  ],
+  "levels": [
+    {
+      "id": "mapplic-bundeslaender",
+      "title": "Deutsche Bundesl\u00e4nder",
+      "map": "\/modules\/contrib\/mapplic_maps\/libraries\/mapplic_maps\/html\/maps\/bundeslaender.svg",
+      "minimap": "\/modules\/contrib\/mapplic_maps\/libraries\/mapplic_maps\/html\/maps\/bundeslaender-mini.jpg",
+      "locations": [
+        {
+          "id": "de-bw",
+          "title": "Baden-W\u00fcrttemberg",
+          "description": "\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cp\u003EZur Unterst\u00fctzung von Lehrer\u0026nbsp;in Zeiten von digitalem Unterricht auf Distanz ver\u00f6ffentlicht das Kultusministerium eine Liste mit freien, digitalen Bildungsangeboten, welche von Sch\u00fcler\u0026nbsp;und Lehrer\u0026nbsp;abgerufen werden kann. Dar\u00fcber hinaus bietet das Landesmedienzentrum \u201eDigitale Sprechstunden\u201c an. Der Landesbildungsserver Baden-W\u00fcrttemberg stellt auf Wunsch ebenfalls Kurse f\u00fcr die E-Learning Plattform Moodle f\u00fcr Lehrpersonal zur Verf\u00fcgung. Das Land hat allen Schulen die M\u00f6glichkeit er\u00f6ffnet, dieses kostenlos zu nutzen. Um einen verl\u00e4sslichen Betrieb des Lern-Management-Systems gew\u00e4hrleisten zu k\u00f6nnen, wurden dar\u00fcber hinaus zus\u00e4tzliche Serverleistung und Speicherkapazit\u00e4t gekauft.\u003C\/p\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.36",
+          "y": "0.79"
+        },
+        {
+          "id": "de-by",
+          "title": "Bayern",
+          "description": "\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cp\u003EUm digitalen Unterricht stattfinden zu lassen, hat das Bayerische Kultusministerium in Zusammenarbeit mit dem Staatsinstitut f\u00fcr Bildungsforschung (ISB) Kurzclips sowie andere digitale Kommunikations- und Lernmittel f\u00fcr die Onlineplattform mebis bereitgestellt.\u0026nbsp; F\u00fcr Sch\u00fcler, die mebis bisher noch nicht genutzt haben, wurden Videotutorials f\u00fcr die Einweisung zur\u0026nbsp;Nutzung der Plattform erstellt. Der Bayerische Rundfunk stellt au\u00dferdem gemeinsam mit dem Kultusministerium ein besonderes Angebot zum Lernen von zu Hause bereit, das sich \u201eSchule daheim\u201c nennt und \u00fcber ARD-alpha sowie in der BR Mediathek t\u00e4glich von 9-12 Uhr abrufbar ist. Begleitendes Lernmaterial wird \u00fcber die Online-Plattform mebis zur Verf\u00fcgung gestellt.\u003C\/p\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.64",
+          "y": "0.75"
+        },
+        {
+          "id": "de-be",
+          "title": "Berlin",
+          "description": "\u003Cp\u003EDas Land Berlin hat mit dem \u201eLernraum Berlin\u201c ein Lernmanagementsystem, das allen \u00f6ffentlichen Berliner Schulen zur Verf\u00fcgung steht. Dieses unterst\u00fctzt interaktives Lernen und die Nutzung digitaler Medien. Der Lernraum Berlin umfasst Kommunikationsmittel, wie Messenger-Dienste, E-Mail-Verteiler und Face-to-Face-Online-Dienste und bietet M\u00f6glichkeiten zur Verbreitung von Unterrichtsmaterial und Lernempfehlungen. Auf diese Weise soll ein Unterricht ohne Pr\u00e4senz in der Schule m\u00f6glich gemacht werden.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.8",
+          "y": "0.32"
+        },
+        {
+          "id": "de-bb",
+          "title": "Brandenburg",
+          "description": "\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cdiv\u003E\r\n\u003Cp\u003EBrandenburgs Schulen sind zum\u0026nbsp;Teil\u0026nbsp;auf einen digitalen Fernunterricht vorbereitet. 51 Schulen in der Region nehmen am Pilotprojekt \u201eSchulcloud Brandenburg\u201c teil. \u00dcber die Schulcloud werden Bildungsinhalte webbasiert von \u00fcberall abrufbar. Das Bildungs-ministerium hat kurzfristig die Online-Plattform \u201eweBBcloud\u201c aufgesetzt, auf der Schulen Informationen f\u00fcr Sch\u00fcler\u0026nbsp;und Eltern hochladen k\u00f6nnen. Fachbezogene Lernaufgaben sowie weitere Materialien k\u00f6nnen von Lehrern\u0026nbsp;\u00fcber das Online-Portal des Instituts f\u00fcr Schulqualit\u00e4t der L\u00e4nder Berlin und Brandenburg\u0026nbsp;abgerufen werden. Zudem verweist das Bildungsministerium auf den Gratis Zugang zur interaktiven Schulmediathek Educ\u2019ARTE von ARTE Education als zus\u00e4tzliches Lernangebot.\u003C\/p\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.85",
+          "y": "0.4"
+        },
+        {
+          "id": "de-hb",
+          "title": "Bremen",
+          "description": "\u003Cp\u003EDie Hansestadt Bremen kann w\u00e4hrend der Phase der Schulschlie\u00dfung auf landesweit bestehende Angebote f\u00fcr digitalen Unterricht auf Distanz zur\u00fcckgreifen. Dazu z\u00e4hlen die Lernplattform itslearning sowie Online Medienangebote f\u00fcr den Unterricht des Zentrums f\u00fcr Medien.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.32",
+          "y": "0.25"
+        },
+        {
+          "id": "de-hh",
+          "title": "Hamburg",
+          "description": "\u003Cp\u003EDer Stadtstaat Hamburg hat beschlossen, in Zeiten von Corona den regul\u00e4ren Schulbetrieb ruhen zu lassen. Die Lehrkr\u00e4fte sind angehalten Lernangebote zu organisieren und diese u.a. \u00fcber digitale Kan\u00e4le an ihre Sch\u00fcler zu kommunizieren. Seit 2018 hat Hamburg das digital.learning.lab, eine Online-Plattform, mit der Lehrkr\u00e4fte bei der Entwicklung digitaler Unterrichtseinheiten unterst\u00fctzt werden. Dar\u00fcber hinaus haben alle Stadtteilschulen und Gymnasium kostenlosen Zugriff auf die web-basierten Lernprogramme \u201eBettermarks\u201c und \u201ekapiert.de\u201c.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.45",
+          "y": "0.19"
+        },
+        {
+          "id": "de-he",
+          "title": "Hessen",
+          "description": "\u003Cp\u003EHessen begegnet den Schulschlie\u00dfungen mit Anregungen zum digitalen Lernen. Ein Gro\u00dfteil der Schulen soll damit begonnen haben, digitalen Fernunterricht einzusetzen. Konkret verweisen die Anregungen des Kultusministeriums auf Lernplattformen wie das kostenlose hessische Schulportal, wtkedu, Moodle oder \u00e4hnliche Angebote. Auf dem hessischen Bildungsserver werden dar\u00fcber hinaus Lernmaterialien und \u2013angebote zur Unterst\u00fctzung beim digitalen Lernen aufgef\u00fchrt, die f\u00fcr Lehrkr\u00e4fte frei zug\u00e4nglich sind. F\u00fcr Lehrer mit Zugang zum hessischen Schulportal besteht dar\u00fcber hinaus die M\u00f6glichkeit, digitale Materialien aus dem edupool der hessischen Medienzentren abzurufen und zu verwenden.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.34",
+          "y": "0.55"
+        },
+        {
+          "id": "de-mv",
+          "title": "Mecklenburg-Vorpommern",
+          "description": "\u003Cp\u003EDas Bildungsministerium in Mecklenburg-Vorpommern stellt allen Schulen kostenlose Zug\u00e4nge zur Unterrichtsplattform Fuxmedia zur Verf\u00fcgung, um in Zeiten von Schulschlie\u00dfungen, den Unterricht im digitalen Raum weiter durchf\u00fchren zu k\u00f6nnen. Mithilfe der Plattform k\u00f6nnen Lehrer*innen Unterrichtseinheiten organisieren sowie Lerninhalte und Anleitungen f\u00fcr ihre Schulklassen anlegen, die von den Sch\u00fcler*innen digital abgerufen werden k\u00f6nnen. Weitere Angebote des interaktiven Lernens und der Bereitstellung von Lerninhalten sind in Vorbereitung. Vorab wurden Hinweise zu Online-Lehrinhalten an die Lehrkr\u00e4fte im Land verschickt und auf den Deutschen Bildungsserver verwiesen, \u00fcber den Lehrer*innen sich informieren k\u00f6nnen.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.71",
+          "y": "0.16"
+        },
+        {
+          "id": "de-ni",
+          "title": "Niedersachsen",
+          "description": "\u003Cp\u003EIn Zeiten von Schulschlie\u00dfungen aufgrund von Corona wurde vom Nieders\u00e4chsischen Kultusministerium beschlossen, dass der Unterrichtsbetrieb in Schulen und anderen \u00f6ffentlichen Institutionen nicht mehr stattfinden und ersatzlos ausfallen wird. Nichtsdestotrotz verf\u00fcgt das Land \u00fcber den Bildungsserver NiBis, der Schulen sowohl eine E-Learning-Plattform als auch Informationen und Materialien bietet.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.4",
+          "y": "0.28"
+        },
+        {
+          "id": "de-nw",
+          "title": "Nordrhein-Westfalen",
+          "description": "\u003Cp\u003EDie Medienberatung NRW stellt im Auftrag des Ministeriums f\u00fcr Schule und Bildung mit der \u201elearn:line\u201c online Lehrmaterialien zur Verf\u00fcgung, die zur Vorbereitung und Durchf\u00fchrung von Fernunterricht genutzt werden k\u00f6nnen. Dar\u00fcber hinaus findet sich auf dem Deutschen Bildungsserver ein weitreichendes Angebot digitaler Lehrmittel. Das Land pr\u00fcft derzeit die Bereitstellung zentraler Plattformen. Eine Sammlung von Unterst\u00fctzungsangeboten f\u00fcr Lehrer in Zeiten des Distanzlernens wurde bereits erarbeitet und wird stetig auf der Webseite aktualisiert. Auch der WDR hat ein Lern- und Bildungsangebot entwickelt, das t\u00e4glich im WDR Fernsehen ausgestrahlt wird.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.19",
+          "y": "0.45"
+        },
+        {
+          "id": "de-rp",
+          "title": "Rheinland-Pfalz",
+          "description": "\u003Cp\u003ELehrkr\u00e4fte in Rheinland-Pfalz sind dazu angehalten, den Unterricht alters- und schulartspezifisch zu organisieren. Daf\u00fcr k\u00f6nnen sie auf analoge Formen zur\u00fcckgreifen oder digitale Unterst\u00fctzungsangebote nutzen. Hierf\u00fcr empfiehlt das Kultusministerium, die Nutzung des modularen Netzes f\u00fcr Schulen (MNS+) sowie der digitalen Lernplattform Moodle, die derzeit von ca. 470 Schulen im Land genutzt wird.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.16",
+          "y": "0.65"
+        },
+        {
+          "id": "de-sl",
+          "title": "Saarland",
+          "description": [],
+          "label": null,
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.1",
+          "y": "0.72"
+        },
+        {
+          "id": "de-sn",
+          "title": "Sachsen",
+          "description": "\u003Cp\u003EUm digitales Lernen vom heimischen Schreibtisch aus zu erm\u00f6glichen, stellt das Kultusministerium in Sachsen die Lern- und Kommunikationsplattform LernSax als digitales Werkzeug f\u00fcr das Lernen au\u00dferhalb des Klassenzimmers zur Verf\u00fcgung. Die Schulen werden in der Umstellung auf den ausschlie\u00dflich digitalen Unterricht mit Online Informationsangeboten, Handreichungen zu verschiedenen digitalen Werkzeugen sowie Webinaren unterst\u00fctzt. LernSax und die Dienste des S\u00e4chsischen Bildungsservers dienen als zentrale Anlaufstellen f\u00fcr die Gestaltung des Unterrichts und die Einbindung von Online-Tools.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.79",
+          "y": "0.51"
+        },
+        {
+          "id": "de-st",
+          "title": "Sachsen-Anhalt",
+          "description": "\u003Cp\u003EIn Sachsen-Anhalt k\u00f6nnen Lehrer und Sch\u00fcler in Zeiten der Schulschlie\u00dfung auf verschiedene Online-Tools und L\u00f6sungen zur\u00fcckgreifen. Die Lernplattform Moodle wird als zentrale Plattform des Landes genutzt und erm\u00f6glicht es, digitale Lehr- und Lernmethoden in den Unterricht einzubinden. Auf Moodle ist dar\u00fcber hinaus die Lern\u2014und \u00dcbungsplattform 2l4s (2learn4students) integriert. Zus\u00e4tzlich haben Lehrkr\u00e4fte Zugriff auf emuCLOUD, die Bildungscloud des Landes. Auch der Zugriff auf lizenzrechtlich abgesicherte und einfach einsetzbare didaktische Unterrichtsmedien wird \u00fcber das Medienportal des Landes, emuTube, erm\u00f6glicht.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.62",
+          "y": "0.39"
+        },
+        {
+          "id": "de-sh",
+          "title": "Schleswig-Holstein",
+          "description": "\u003Cp\u003EEinige Schulen in Schleswig-Holstein setzen digitalen Unterricht bereits ein. Mit SchulCommSy, IServ oder anderen webbasierten Lernplattformen (Moodle, LogoDidakt) werden entsprechende Voraussetzungen f\u00fcr den digitalen Fernunterricht geboten. Zudem werden Schulen dazu aufgerufen, Aufgaben \u00fcber die jeweiligen Schulhomepages oder E-Mail-Verteiler zug\u00e4nglich zu machen. Lehrkr\u00e4fte k\u00f6nnen das Angebot der Mediathek des Instituts f\u00fcr Qualit\u00e4tsentwicklung an Schulen Schleswig-Holstein (IQSH) nutzen. Dar\u00fcber hinaus stellt das Bildungsministerium t\u00e4glich unter dem Hashtag #wirlernen auf Instagram und Twitter Links und Bildungsangebote vor, die Sch\u00fclern in Zeiten von Schulschlie\u00dfungen einen Mehrwert bieten.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.44",
+          "y": "0.1"
+        },
+        {
+          "id": "de-th",
+          "title": "Th\u00fcringen",
+          "description": "\u003Cp\u003EDie technischen Voraussetzungen f\u00fcr digitalen Fernunterricht sind in Th\u00fcringen bisher noch nicht fl\u00e4chendeckend etabliert. Derzeit wird an insgesamt 25 digitalen Pilotschulen eine Schulcloud getestet, die f\u00fcr Zwecke des digitalen Unterrichts zum Einsatz kommen soll. Allerdings befindet sich diese noch in der Erprobung. Um dennoch das Lernen auf Distanz zu erm\u00f6glichen, sind Lehrkr\u00e4fte dazu angehalten, Unterrichtsmaterialien und Aufgabenstellungen zu erarbeiten, die ggf. auch auf traditionellen und etablierten Kommunikationswegen an die Sch\u00fcler*innen verschickt werden.\u003C\/p\u003E\r\n",
+          "label": "",
+          "pin": "blue",
+          "fill": "#009FE3",
+          "thumbnail": null,
+          "link": null,
+          "zoom": "1",
+          "x": "0.55",
+          "y": "0.53"
+        }
+      ]
+    }
+  ]
+}
