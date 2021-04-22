@@ -1,4 +1,4 @@
-Mapplic Maps
+Mapplic Maps fork
 -----------------
 
 * Description
@@ -21,10 +21,12 @@ This is preset / prepared for German users mainly.
 welt
 europa
 deutschland
+bundeslaender
+startup laender
 
 for other countries or regions copy controller and adopt wording scheme.
-
 I know this could be better solved with variables, but I had no time for this.
+
 
 Requirements
 ------------
@@ -70,23 +72,27 @@ Installation
 ------------
 
 1. Unpack in the *modules* folder `/modules/contrib/`
-  1.1 remove files from:   /mapplic_maps/config/install andcopy to your /config/sync folder
+  1.1 remove files from:   /mapplic_maps/config/install and copy to your /config/sync folder
   1.2 and enable in `/admin/modules`
 
 #mapplic block has one dependency: "dynamic_entity_reference"
 
 2. Purchase! the mapplic jQuery here: https://www.mapplic.com/ and download ZIP file.
-Extract the ZIP-File: 'codecanyon-6275001-mapplic-custom-interactive-map-jquery-plugin.zip' (or similar) 
+Extract the ZIP-File: 'codecanyon-6275001-mapplic-custom-interactive-map-jquery-plugin.zip' (or similar)
 to subdir of the mapplic_maps module:  /modules/contrib/mapplic_maps/libraries/mapplic_maps/
 /html/ is enough, no need for the /docs/ folder
 
-  2.1 When you like to use the prepared German map controller: Deutschland, Europa, Welt
+  2.1 When you like to use the prepared German map controller: Bundesländer Deutschland, Europa, Welt
   you should:
-    - copy the germany.json to deutschland.json and translate the names
-    - copy the europe.json to europa.json and translate the names
-    - copy the world.json to welt.json and translate the names
+  mapplic_maps\maps\data
+    - copy the /mapplic_maps/maps/data/bundeslaender.json to deutschland.json and translate the names
+    - copy the /mapplic_maps/maps/data/germany.json to deutschland.json and translate the names
+    - copy the /mapplic_maps/maps/data/europe.json to europa.json and translate the names
+    - copy the /mapplic_maps/maps/data/world.json to welt.json and translate the names
 
-  2.2 Do the same with the maps: germany.svg germany-mini.svg etc.
+  2.2 Do the same with the maps:
+  modules\contrib\mapplic_maps\libraries\mapplic_maps\html\maps\germany.svg
+  modules\contrib\mapplic_maps\libraries\mapplic_maps\html\maps\germany-mini.svg etc.
 
 3. In order to see data on any map you must import the config/sync files
 
@@ -94,7 +100,7 @@ to subdir of the mapplic_maps module:  /modules/contrib/mapplic_maps/libraries/m
 
   3.2 taxonomy:     'landmark'         with at least one label for the map you would like to use:
     - France for France,
-    - Deutschland für Deutschland
+    - Deutschland for Deutschland
     - World for world etc.
 
   3.3 Block layout:
