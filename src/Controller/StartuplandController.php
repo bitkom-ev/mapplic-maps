@@ -11,6 +11,7 @@ use Drupal\Core\Controller\ControllerBase;
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Exception;
 
 /**
  * Class StartuplandController
@@ -34,9 +35,9 @@ class StartuplandController extends ControllerBase {
       $settings['levels'][0]['map'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/bundeslaender.svg';
       $settings['levels'][0]['minimap'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/bundeslaender-mini.jpg';
     } catch (Exception $e) {
-      watchdog('entity_metadata_wrapper', 'entity_metadata_wrapper error in %error_loc', [
+      \Drupal::logger('mapplic_maps')->error( 'entity_metadata_wrapper error in %error_loc', [
         '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
-      ], WATCHDOG_CRITICAL);
+      ]);
       return new JsonResponse($settings);
     }
 
@@ -134,9 +135,9 @@ class StartuplandController extends ControllerBase {
           //$wrapper->mapplic_pos_y->value(),
         ];
       } catch (Exception $e) {
-        watchdog('entity_metadata_wrapper', 'entity_metadata_wrapper error in %error_loc', [
+        \Drupal::logger('mapplic_maps')->error( 'entity_metadata_wrapper error in %error_loc', [
           '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
-        ], WATCHDOG_CRITICAL);
+        ]);
         // Logs an error
         \Drupal::logger('mapplic_maps')
           ->error("Node mapplic_landmark for Taxonomy LänderStartupsSäule not found: " . $node);

@@ -1,0 +1,13 @@
+{
+  "name": "bitkom-ev/mapplic_maps",
+  "description": "Fork of Mapplic Maps which integrates mapplic jquery",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "require-dev": {
+    "drupal/entity": "~1.0",
+    "drupal/dynamic_entity_reference": "~2.0",
+    "drupal/jquery_colorpicker": "~2.0"
+  },
+  "minimum-stability": "dev"
+}
+

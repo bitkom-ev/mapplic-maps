@@ -10,9 +10,11 @@ namespace Drupal\mapplic_maps\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Url;
 use Drupal\file\Entity\File;
+use Drupal\node\Entity\Node;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Drupal\image\Entity\ImageStyle;
+use Exception;
 
 /**
  * Default controller for the mapplic maps module.
@@ -34,11 +36,11 @@ class DefaultController extends ControllerBase {
             $settings['levels'][0]['title'] = 'Deutschland';
             $settings['levels'][0]['map'] = '/libraries/mapplic_maps/html/maps/deutschland.svg';
             $settings['levels'][0]['minimap'] = '/libraries/mapplic_maps/html/maps/deutschland-mini.svg';
-            
+
         } catch (Exception $e) {
-            watchdog('entity_metadata_wrapper', 'entity_metadata_wrapper error in %error_loc', [
+            \Drupal::logger('mapplic_maps')->error('entity_metadata_wrapper error in %error_loc', [
                 '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__
-                    ], WATCHDOG_CRITICAL);
+                    ]);
             return;
         }
 
@@ -59,7 +61,7 @@ class DefaultController extends ControllerBase {
 
         $result = $query->execute();
         if (isset($result) && !empty($result)) {
-            $nodes = node_load_multiple($result);
+            $nodes = Node::loadMultiple($result);
         }
 
         foreach ($nodes as $node) {
@@ -94,9 +96,9 @@ class DefaultController extends ControllerBase {
                     'y' => $node->get('field_mapplic_pos_y')->getValue()[0]['value'], //$wrapper->mapplic_pos_y->value(),
                 ];
             } catch (Exception $e) {
-                watchdog('entity_metadata_wrapper', 'entity_metadata_wrapper error in %error_loc', [
+                \Drupal::logger('mapplic_maps')->error('entity_metadata_wrapper error in %error_loc', [
                     '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__
-                        ], WATCHDOG_CRITICAL);
+                        ]);
                 return;
             }
         }
@@ -120,9 +122,9 @@ class DefaultController extends ControllerBase {
             $uri = $file->getFileUri();
             return new BinaryFileResponse($uri, 200, $headers);
         } catch (Exception $e) {
-            watchdog('entity_metadata_wrapper', 'entity_metadata_wrapper error in %error_loc', [
+            \Drupal::logger('mapplic_maps')->error('entity_metadata_wrapper error in %error_loc', [
                 '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__
-                    ], WATCHDOG_CRITICAL);
+                    ]);
             return;
         }
 
