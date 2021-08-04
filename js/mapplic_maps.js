@@ -1,6 +1,6 @@
 Drupal.behaviors.InitializeMapplic = {
     attach: function (context, settings) {
-        console.log(drupalSettings.mapplic_maps);
+        //console.log(drupalSettings.mapplic_maps);
         var mapplic = jQuery("#mapplic_maps").mapplic({
             action: 'tooltip',
             animate: drupalSettings.mapplic_maps.animate,

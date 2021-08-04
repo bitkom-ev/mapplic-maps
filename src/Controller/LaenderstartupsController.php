@@ -10,8 +10,9 @@ namespace Drupal\mapplic_maps\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
-use Symfony\Component\HttpFoundation\JsonResponse;
+use Drupal\node\Entity\Node;
 use Exception;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
  * Class LaenderstartupsController
@@ -35,45 +36,47 @@ class LaenderstartupsController extends ControllerBase {
       $settings['levels'][0]['map'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/bundeslaender.svg';
       $settings['levels'][0]['minimap'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/bundeslaender-mini.jpg';
     } catch (Exception $e) {
-      \Drupal::logger('mapplic_maps')->error( 'entity_metadata_wrapper error in %error_loc', [
-        '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
-      ]);
+      \Drupal::logger('mapplic_maps')
+        ->error('entity_metadata_wrapper error in %error_loc', [
+          '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
+        ]);
       return new JsonResponse($settings);
     }
 
     $nodes = [];
     /**
-     * taxonomy landmark anlegen: Bundeslaender / Deutschland / Europa / Welt
-     */
+     * taxonomy landmark anlegen: Deutschland / Europa / Welt
+     * SELECT * FROM bitkom.taxonomy_term_field_data;
+     * 589  589  landmark  de  Deutschland  <p>Deutschland</p>
+     * 590  590  landmark  de  Welt  <p>Weltkarte</p>
+     * 591  591  landmark  de  Europa  <p>Europa-Karte</p>
+     * 662  662  landmark  de  Bundeslaender
+     * 773  773  landmark  de  LaenderStartups
+     * 774  774  landmark  de  LaenderStartupsSaeule  <p>Länder Startups Säule</p>
+     * 775  775  landmark  de  Startupland  <p>Startup-Land</p>
+     * filtered_html     */
     $query = \Drupal::entityQuery('node');
+
     $query->condition('type', 'mapplic_landmark')
       ->condition('status', 1)
-      ->condition('field_mapplic_map_karte.entity:taxonomy_term.name', 'LaenderStartups', '=') // Länder Startups / Bundeslaender / Deutschland / Europa / Welt
+      ->condition('field_mapplic_map_karte', 773) // 773	773	landmark	de	LaenderStartups
+      //->condition('field_mapplic_map_karte.entity:taxonomy_term.name', 'LaenderStartups', '=') // Länder Startups / Bundeslaender / Deutschland / Europa / Welt
       ->sort('title', 'ASC');
-    //dump($query);
 
     $result = $query->execute();
-    //dump($result);
 
     if (isset($result) && !empty($result)) {
-      //$nodes = node_load_multiple($result);
-      $nids = $result;  // create from some previous query or action.
-      $node_storage = \Drupal::entityTypeManager()->getStorage('node');
-      $nodes = $node_storage->loadMultiple($nids);
+      $nodes = Node::loadMultiple($result);
     }
-    //dump($nodes);
-
     if (empty($nodes)) {
-      // Logs an error
       \Drupal::logger('mapplic_maps')
-        ->error("Nodes mapplic_landmark and Taxonomy Länder Startups are still empty: " . $nodes);
+        ->error("Nodes mapplic_landmark and Taxonomy landmark with: LaenderStartups are still empty: " . $nodes);
       return new JsonResponse($settings);
     }
 
+
     foreach ($nodes as $node) {
       try {
-        /**
-         * */
         $thumb = NULL;
         $uri = NULL;
         if (isset($node->get('field_thumb_image')
@@ -135,9 +138,10 @@ class LaenderstartupsController extends ControllerBase {
           //$wrapper->mapplic_pos_y->value(),
         ];
       } catch (Exception $e) {
-        \Drupal::logger('mapplic_maps')->error('entity_metadata_wrapper error in %error_loc', [
-          '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
-        ]);
+        \Drupal::logger('mapplic_maps')
+          ->error('entity_metadata_wrapper error in %error_loc', [
+            '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
+          ]);
         return;
       }
     }

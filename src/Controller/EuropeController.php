@@ -11,8 +11,8 @@ use Drupal\Core\Controller\ControllerBase;
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\node\Entity\Node;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Exception;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
  * Europe controller for the mapplic maps module.
@@ -35,28 +35,41 @@ class EuropeController extends ControllerBase {
       $settings['levels'][0]['map'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/europe.svg';
       $settings['levels'][0]['minimap'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/europe-mini.jpg';
     } catch (Exception $e) {
-      \Drupal::logger('mapplic_maps')->error('entity_metadata_wrapper error in %error_loc', [
-        '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
-      ]);
+      \Drupal::logger('mapplic_maps')
+        ->error('entity_metadata_wrapper error in %error_loc', [
+          '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
+        ]);
       return;
     }
 
     $nodes = [];
     /**
      * taxonomy landmark anlegen: Deutschland / Europa / Welt
-     */
+     * SELECT * FROM bitkom.taxonomy_term_field_data;
+     * 589  589  landmark  de  Deutschland  <p>Deutschland</p>
+     * 590  590  landmark  de  Welt  <p>Weltkarte</p>
+     * 591  591  landmark  de  Europa  <p>Europa-Karte</p>
+     * 662  662  landmark  de  Bundeslaender
+     * 773  773  landmark  de  LaenderStartups
+     * 774  774  landmark  de  LaenderStartupsSaeule  <p>Länder Startups Säule</p>
+     * 775  775  landmark  de  Startupland  <p>Startup-Land</p>
+     * filtered_html     */
     $query = \Drupal::entityQuery('node');
+
     $query->condition('type', 'mapplic_landmark')
       ->condition('status', 1)
-      ->condition('field_mapplic_map_karte.entity:taxonomy_term.name', 'Europa', '=') // Deutschland / Europa / Welt
+      ->condition('field_mapplic_map_karte', 591) // 591	591	landmark	de	Europa	<p>Europa-Karte</p>
+      //->condition('field_mapplic_map_karte.entity:taxonomy_term.name', 'Europa', '=') // Deutschland / Europa / Welt
       ->sort('title', 'ASC');
+
     $result = $query->execute();
+
     if (isset($result) && !empty($result)) {
       $nodes = Node::loadMultiple($result);
     }
     if (empty($nodes)) {
-          // Logs an error
-          \Drupal::logger('mapplic_maps')->error("Nodes mapplic_landmark and Taxonomy Bundeslaender are still empty: " . $nodes);
+      \Drupal::logger('mapplic_maps')
+        ->error("Nodes mapplic_landmark and Taxonomy landmark with: Europa are still empty: " . $nodes);
       return;
     }
 
@@ -121,15 +134,15 @@ class EuropeController extends ControllerBase {
           //$wrapper->mapplic_pos_y->value(),
         ];
       } catch (Exception $e) {
-        \Drupal::logger('mapplic_maps')->error('entity_metadata_wrapper error in %error_loc', [
-          '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
-        ]);
+        \Drupal::logger('mapplic_maps')
+          ->error('entity_metadata_wrapper error in %error_loc', [
+            '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
+          ]);
         return;
       }
     }
 
     rsort($settings['levels']);
-    // Calling all modules implementing hook_mapplic_maps_settings_alter():
     \Drupal::moduleHandler()->alter('mapplic_maps_settings', $settings);
 
     return new JsonResponse($settings);
