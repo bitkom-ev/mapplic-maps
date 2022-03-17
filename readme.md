@@ -17,12 +17,12 @@ and is from now ready for drupal 9. This third party library mapplic is not free
 This Module is a fork of: https://www.drupal.org/project/mapplic_maps (which did not work for me)
 This is preset / prepared for German users mainly.
 
-3 Controller are prepared:
-welt
-europa
-deutschland
-bundeslaender
-startup laender
+3 controllers are prepared:
+* welt
+* europa
+* deutschland
+* bundeslaender
+* startup laender
 
 for other countries or regions copy controller and adopt wording scheme.
 I know this could be better solved with variables, but I had no time for this.
