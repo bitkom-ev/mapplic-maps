@@ -68,8 +68,7 @@ class EuropeController extends ControllerBase {
       $nodes = Node::loadMultiple($result);
     }
     if (empty($nodes)) {
-      \Drupal::logger('mapplic_maps')
-        ->error("Nodes mapplic_landmark and Taxonomy landmark with: Europa are still empty: " . $nodes);
+      \Drupal::logger('mapplic_maps')->error("Nodes mapplic_landmark and Taxonomy landmark with: Europa are still empty: " . $nodes);
       return;
     }
 

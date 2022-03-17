@@ -30,7 +30,7 @@ class MapplicMapsGermany extends BlockBase
     $config = \Drupal::config('mapplic_maps.settings');
 
     //to generate: maps/data/germany.json
-    $source = Url::fromRoute("mapplic_maps_germany.json");
+    //$source = Url::fromRoute("mapplic_maps_germany.json");
 
     $mapplicMapsSettings = [
       'mapplic_maps' => [
@@ -65,8 +65,7 @@ class MapplicMapsGermany extends BlockBase
         'zoom' => $config->get('mapplic_zoom'),
       ],
     ];
-    //kint($mapplicMapsSettings);
-
+    
     return [
       '#theme' => '',
       '#description' => t('Germany Map'),

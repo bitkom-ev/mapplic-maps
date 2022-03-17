@@ -17,15 +17,19 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 /**
  * Germany controller for the mapplic maps module.
  */
-class GermanyController extends ControllerBase {
+class GermanyController extends ControllerBase
+{
 
-  public function _mapplic_maps_germany_json() {
+  public function _mapplic_maps_germany_json()
+  {
     $settings = [
       'mapwidth' => "600",
       'mapheight' => "800",
       'categories' => ['Germany'],
       'levels' => [],
     ];
+    //dump($settings);
+    //\Drupal::logger('mapplic_maps')->error("mapplic_maps Germany settings: " . print_r($settings, true));
 
     try {
       $config = \Drupal::config('mapplic_maps.settings');
@@ -34,44 +38,32 @@ class GermanyController extends ControllerBase {
       $settings['levels'][0]['map'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/germany.svg';
       $settings['levels'][0]['minimap'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/germany-mini.jpg';
     } catch (Exception $e) {
-      \Drupal::logger('mapplic_maps')
-        ->error('entity_metadata_wrapper error in %error_loc', [
-          '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
-        ]);
+      \Drupal::logger('mapplic_maps')->error('mapplic_maps error in %error_loc', ['%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__, ]);
       return;
     }
 
     $nodes = [];
     /**
+     * SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS  WHERE TABLE_SCHEMA = 'prod_smartschool' AND TABLE_NAME = 'taxonomy_term_field_data';
+     * tid     * vid     * name
      * taxonomy landmark anlegen: Deutschland / Europa / Welt
-     * SELECT * FROM bitkom.taxonomy_term_field_data;
-     * 589  589  landmark  de  Deutschland  <p>Deutschland</p>
-     * 590  590  landmark  de  Welt  <p>Weltkarte</p>
-     * 591  591  landmark  de  Europa  <p>Europa-Karte</p>
-     * 662  662  landmark  de  Bundeslaender
-     * 773  773  landmark  de  LaenderStartups
-     * 774  774  landmark  de  LaenderStartupsSaeule  <p>Länder Startups Säule</p>
-     * 775  775  landmark  de  Startupland  <p>Startup-Land</p>
-     * filtered_html     */
+     * 557     557     landmark        de      Deutschland
+     * 558     558     landmark        de      Europa  NULL
+     * 559     559     landmark        de      Welt    NULL
+     *  drush -l smartschool sql-query "SELECT * FROM prod_smartschool.taxonomy_term_field_data WHERE vid = 'landmark';"
+     */
     $query = \Drupal::entityQuery('node');
-
-    $query->condition('type', 'mapplic_landmark')
-      ->condition('status', 1)
-      ->condition('field_mapplic_map_karte', 589) // 589	589	landmark	de	Deutschland	<p>Deutschland</p>
-      //->condition('field_mapplic_map_karte.entity:taxonomy_term.name', 'Deutschland', '=') // Deutschland / Europa / Welt
-      ->sort('title', 'ASC');
+    $query->condition('type', 'mapplic_landmark')->condition('status', 1)->condition('field_mapplic_map_karte', 557) ->sort('title', 'ASC');
 
     $result = $query->execute();
-
     if (isset($result) && !empty($result)) {
       $nodes = Node::loadMultiple($result);
     }
+
     if (empty($nodes)) {
-      \Drupal::logger('mapplic_maps')
-        ->error("Nodes mapplic_landmark and Taxonomy landmark with: Deutschland are still empty: " . $nodes);
+      \Drupal::logger('mapplic_maps')->error("mapplic_maps error: Nodes mapplic_landmark and Taxonomy landmark with: Deutschland are still empty: " . print_r($nodes));
       return;
     }
-
 
     foreach ($nodes as $node) {
       try {
@@ -117,10 +109,8 @@ class GermanyController extends ControllerBase {
           'title' => $node->getTitle(),
           'description' => $description,
           'label' => $about,
-          'pin' => $node->get('field_mapplic_pin')
-            ->getValue()[0]['value'] ?: 'hidden',
-          'fill' => $node->get('field_background_colour')
-            ->getValue()[0]['value'] ?: '',
+          'pin' => $node->get('field_mapplic_pin')->getValue()[0]['value'] ?: 'hidden',
+          'fill' => $node->get('field_background_colour')->getValue()[0]['value'] ?: '',
           'thumbnail' => $thumb_url,
           'link' => $link,
           // $node->get('field_link')->getValue()[0]['uri'],
@@ -131,11 +121,10 @@ class GermanyController extends ControllerBase {
           'y' => $node->get('field_mapplic_pos_y')->getValue()[0]['value'],
           //$wrapper->mapplic_pos_y->value(),
         ];
+        //dump($settings);
+
       } catch (Exception $e) {
-        \Drupal::logger('mapplic_maps')
-          ->error('entity_metadata_wrapper error in %error_loc', [
-            '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
-          ]);
+        \Drupal::logger('mapplic_maps')->error('mapplic_maps error in %error_loc', ['%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,]);
         return;
       }
     }

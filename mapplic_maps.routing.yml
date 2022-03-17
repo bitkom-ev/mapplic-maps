@@ -6,17 +6,6 @@ mapplic_maps.admin_settings:
   requirements:
     _permission: 'administer mapplic maps'
 
-mapplic_maps_map.json:
-  path: /maps/data/{map_width}/{map_height}/{map}
-  defaults:
-    _controller: '\Drupal\mapplic_maps\Controller\MapController::_mapplic_maps_map_json'
-    _title: 'Map json for mapplic_maps'
-    map: 'mapplic.json'
-    map_width: '1200'
-    map_height: '760'
-  requirements:
-    _permission: 'access content'
-
 mapplic_maps.json:
   path: /maps/data/deutschland.json
   defaults:

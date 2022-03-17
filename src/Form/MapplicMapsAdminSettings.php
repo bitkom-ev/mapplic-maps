@@ -27,7 +27,7 @@ class MapplicMapsAdminSettings extends ConfigFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $config = $this->config('mapplic_maps.settings');
     $map_file  = $form_state->getValue('mapplic_maps');
-    /* Load the object of the file by it's fid */ 
+    /* Load the object of the file by it's fid */
     $file = File::load( $map_file[0] );
 
     /* Set the status flag permanent of the file object */
@@ -53,8 +53,8 @@ class MapplicMapsAdminSettings extends ConfigFormBase {
   protected function getEditableConfigNames() {
     return ['mapplic_maps.settings'];
   }
-
-  public function buildForm(array $form, \Drupal\Core\Form\FormStateInterface $form_state) {
+//
+  public function buildForm(array $form, FormStateInterface $form_state) {
 
     $config = $this->config('mapplic_maps.settings');
     $form = ['#attributes' => ['enctype' => 'multipart/form-data']];

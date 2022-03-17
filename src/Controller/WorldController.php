@@ -34,10 +34,7 @@ class WorldController extends ControllerBase {
       $settings['levels'][0]['map'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/welt.svg';
       $settings['levels'][0]['minimap'] = '/modules/contrib/mapplic_maps/libraries/mapplic_maps/html/maps/welt-mini.jpg';
     } catch (Exception $e) {
-      \Drupal::logger('mapplic_maps')
-        ->error('entity_metadata_wrapper error in %error_loc', [
-          '%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,
-        ]);
+      \Drupal::logger('mapplic_maps')->error('entity_metadata_wrapper error in %error_loc', ['%error_loc' => __FUNCTION__ . ' @ ' . __FILE__ . ' : ' . __LINE__,]);
       return;
     }
 
