@@ -9,7 +9,7 @@ Mapplic Maps fork
 * Demo
 
 Description
-------------
+-----------------
 Mapplic Maps integrates the third party Javascript library mapplic from https://www.mapplic.com/
 and is from now ready for drupal 9. This third party library mapplic is not free.
 You must purchase it: https://www.mapplic.com/pricing/ [ in 2019 24 $ ]
@@ -29,7 +29,7 @@ I know this could be better solved with variables, but I had no time for this.
 
 
 Requirements
-------------
+-----------------
 Modules:
 - dynamic_entity_reference
 
@@ -51,7 +51,7 @@ drush cim to import
 
 
 Features
-------------
+-----------------
 Provides three Blocks with four  maps: Bundeslaender, Germany, europe & World
 Makes use of one content type: landmark to edit & place
 landmarks with:
@@ -69,7 +69,7 @@ landmarks with:
 
 
 Installation
-------------
+-----------------
 
 1. Unpack in the *modules* folder `/modules/contrib/`
   1.1 remove files from:   /mapplic_maps/config/install and copy to your /config/sync folder
