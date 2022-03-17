@@ -11,7 +11,7 @@ Mapplic Maps fork
 Description
 ------------
 Mapplic Maps integrates the third party Javascript library mapplic from https://www.mapplic.com/
-to drupal 8. This third party library mapplic is not free.
+and is from now ready for drupal 9. This third party library mapplic is not free.
 You must purchase it: https://www.mapplic.com/pricing/ [ in 2019 24 $ ]
 --
 This Module is a fork of: https://www.drupal.org/project/mapplic_maps (which did not work for me)
